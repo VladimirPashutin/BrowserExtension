@@ -1,0 +1,54 @@
+{
+    "manifest_version": 3,
+    "name": "Яндекс.Бизнес помощник",
+    "version": "0.3",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "content/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://yandex.ru/sprav/*"
+            ],
+            "js": [
+                "content/sidebar/agents.js",
+                "content/sidebar/auth/login_button.js",
+                "content/sidebar/auth/login_status_html.js",
+                "content/sidebar/auth/check_auth.js",
+                "content/sidebar/ping/ping_button.js",
+                "content/sidebar/ping/ping_status_button.js",
+                "content/sidebar/post/get_post_button.js",
+                "content/sidebar/post/publish_post_button.js",
+                "content/sidebar/post/post_agent_run.js",
+                "content/sidebar/post/post_controller_html.js",
+                "content/sidebar/review/apply_answer_button.js",
+                "content/sidebar/review/get_review_button.js",
+                "content/sidebar/review/issue_create.js",
+                "content/sidebar/review/issue_get.js",
+                "content/sidebar/review/issue_solved.js",
+                "content/sidebar/review/review_agent_run.js",
+                "content/sidebar/review/review_controller_html.js",
+                "content/sidebar/review/review_response_generate_button.js",
+                "content/sidebar/review/review_response_generate_status_button.js",
+                "content/sidebar/review/review_spoiler_toggle_button.js",
+                "content/sidebar/settings/settings_html.js",
+                "content/sidebar/visibility_controller.js",
+                "content/sidebar/sidebar_html.js",
+                "content/sidebar/show_sidebar.js",
+                "utils/preload_data.js",
+                "utils/get_page_content.js",
+                "services/api_service.js",
+                "content/init_message_listening.js",
+                "content/content.js"
+            ],
+            "css": [
+                "content/sidebar/sidebar.css"
+            ]
+        }
+    ]
+}

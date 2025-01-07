@@ -1,0 +1,3216 @@
+{
+    "globalData": {
+        "user": {
+            "status": "VALID",
+            "uid": 2016744911,
+            "lang": "ru",
+            "displayName": "Антон",
+            "avatar": "26311\u002F0c-4",
+            "addressList": [
+                "Bservis70@yandex.ru"
+            ],
+            "login": "Bservis70",
+            "isYandexoid": false,
+            "phone": "+7 993 550‒44‒83",
+            "users": [],
+            "hasUserTicket": true,
+            "yandexuid": "5922328191691828084",
+            "permissions": {},
+            "experiments": [
+                "get_thermometers_from_geosearch",
+                "redirect_for_duplicates",
+                "new_moderation_mail",
+                "company_sorting",
+                "custom_review_author_calculation",
+                "booking_category_31529",
+                "booking_category_31407",
+                "booking_category_31528",
+                "booking_category_31649",
+                "booking_category_31657",
+                "booking_category_31656",
+                "booking_category_30689",
+                "booking_category_31530",
+                "booking_category_30321",
+                "booking_category_30681",
+                "booking_category_30207",
+                "booking_category_30208",
+                "booking_category_30214",
+                "booking_category_30578",
+                "booking_category_31426",
+                "booking_category_31546",
+                "booking_category_31420",
+                "booking_category_30331",
+                "booking_category_30210",
+                "booking_category_30211",
+                "review_new_comments",
+                "booking_category_3501624582",
+                "booking_category_3501418474",
+                "booking_category_31509",
+                "booking_category_30657",
+                "booking_category_31505",
+                "booking_category_31504",
+                "booking_category_30658",
+                "booking_category_31507",
+                "booking_category_31511",
+                "booking_category_31634",
+                "booking_category_3501611069",
+                "booking_category_3491649165",
+                "booking_category_3491649163",
+                "booking_category_30789",
+                "booking_category_31637",
+                "booking_category_31636",
+                "booking_category_30308",
+                "booking_category_31523",
+                "booking_category_30434",
+                "booking_category_31401",
+                "booking_category_31404",
+                "booking_category_31525",
+                "booking_category_31524",
+                "booking_category_30310",
+                "booking_category_30795",
+                "booking_category_274864961",
+                "booking_category_20679",
+                "booking_category_30248",
+                "booking_category_30485",
+                "booking_category_31334",
+                "booking_category_31450",
+                "booking_category_31588",
+                "booking_category_30259",
+                "booking_category_31107",
+                "booking_category_30495",
+                "booking_category_3501621390",
+                "booking_category_30377",
+                "booking_category_31580",
+                "booking_category_31462",
+                "booking_category_31461",
+                "booking_category_3493720533",
+                "booking_category_144152359",
+                "booking_category_30345",
+                "booking_category_3501604600",
+                "booking_category_31316",
+                "booking_category_30221",
+                "booking_category_31551",
+                "booking_category_3501478864",
+                "booking_category_3501571789",
+                "booking_category_30352",
+                "booking_category_30233",
+                "booking_category_30355",
+                "booking_category_3501598014",
+                "booking_category_31137",
+                "booking_category_31375",
+                "booking_category_31136",
+                "booking_category_30289",
+                "booking_category_30161",
+                "booking_category_31492",
+                "booking_category_30163",
+                "booking_category_31495",
+                "booking_category_31131",
+                "booking_category_31252",
+                "booking_category_31373",
+                "booking_category_3501478922",
+                "booking_category_31029",
+                "booking_category_31387",
+                "booking_category_31265",
+                "booking_category_30177",
+                "booking_category_31146",
+                "booking_category_31022",
+                "booking_category_31264",
+                "booking_category_30170",
+                "booking_category_31116",
+                "booking_category_31118",
+                "booking_category_3501483288",
+                "header_for_geoprod",
+                "booking_category_31595",
+                "booking_category_30266",
+                "booking_category_30387",
+                "booking_category_31592",
+                "booking_category_30260",
+                "booking_category_30261",
+                "booking_category_31110",
+                "booking_category_31472",
+                "booking_category_3501497449",
+                "booking_category_31119",
+                "booking_category_31368",
+                "booking_category_31128",
+                "booking_category_30396",
+                "booking_category_30155",
+                "booking_category_31122",
+                "booking_category_30156",
+                "booking_category_30157",
+                "booking_category_30273",
+                "booking_category_30394",
+                "booking_category_20276",
+                "booking_category_21480",
+                "booking_category_3501647395",
+                "booking_category_3501571807",
+                "booking_category_3501627308",
+                "booking_category_1180056060",
+                "booking_category_30085",
+                "booking_category_31297",
+                "booking_category_31293",
+                "booking_category_31292",
+                "booking_category_21237",
+                "booking_category_21470",
+                "booking_category_31069",
+                "booking_category_30096",
+                "booking_category_31066",
+                "booking_category_31065",
+                "booking_category_21386",
+                "booking_category_21023",
+                "booking_category_262003042",
+                "booking_category_3501569754",
+                "booking_category_3501571704",
+                "booking_category_31157",
+                "booking_category_30181",
+                "booking_category_859588950",
+                "booking_category_30078",
+                "booking_category_31284",
+                "booking_category_31286",
+                "booking_category_30192",
+                "booking_category_3501656614",
+                "booking_category_3501539206",
+                "booking_category_31098",
+                "booking_category_31092",
+                "booking_category_31095",
+                "booking_category_31094",
+                "booking_category_3501479076",
+                "booking_category_31072",
+                "booking_category_3501523183",
+                "booking_category_1191769628",
+                "booking_category_31081",
+                "booking_category_31084",
+                "booking_category_3501631880",
+                "booking_category_30810",
+                "booking_category_3501527629",
+                "booking_category_3501479397",
+                "booking_category_30907",
+                "booking_category_30905",
+                "booking_category_30906",
+                "booking_category_3480798811",
+                "booking_category_30717",
+                "booking_category_30718",
+                "booking_category_30719",
+                "booking_category_3501632374",
+                "booking_category_30961",
+                "booking_category_3501624630",
+                "booking_category_3501479454",
+                "geoprod_geovisor",
+                "booking_category_140638190",
+                "booking_category_30609",
+                "booking_category_30610",
+                "booking_category_30853",
+                "booking_category_30937",
+                "booking_category_30940",
+                "booking_category_3501479471",
+                "booking_category_263455525",
+                "booking_category_30706",
+                "booking_category_30703",
+                "booking_category_30946",
+                "booking_category_3501411425",
+                "booking_category_3501620048",
+                "booking_category_3501571694",
+                "booking_category_3501620049",
+                "booking_category_30756",
+                "booking_category_30998",
+                "booking_category_30757",
+                "booking_category_30758",
+                "booking_category_30759",
+                "booking_category_30764",
+                "booking_category_30765",
+                "booking_category_30887",
+                "booking_category_30761",
+                "booking_category_31619",
+                "booking_category_30409",
+                "booking_category_30767",
+                "booking_category_30405",
+                "booking_category_30647",
+                "booking_category_30768",
+                "booking_category_30406",
+                "booking_category_30895",
+                "booking_category_30412",
+                "booking_category_31621",
+                "booking_category_30775",
+                "booking_category_31503",
+                "booking_category_30770",
+                "booking_category_30410",
+                "booking_category_3501482702",
+                "booking_category_20612",
+                "booking_category_30738",
+                "show_collections_link",
+                "booking_category_30735",
+                "booking_category_30741",
+                "booking_category_30985",
+                "booking_category_30740",
+                "booking_category_3501478105",
+                "booking_category_20728",
+                "booking_category_3501478101",
+                "booking_category_3501478108",
+                "booking_category_3501479439",
+                "booking_category_3501479438",
+                "booking_category_30626",
+                "booking_category_30748",
+                "booking_category_30995",
+                "booking_category_30755",
+                "booking_category_30750",
+                "booking_category_3501623876",
+                "direct_api_v3",
+                "chain_lenta",
+                "route_to_updates_from_companies",
+                "company_lenta"
+            ],
+            "expFeatures": {
+                "allowSyncLandingCallTrackingTask": true,
+                "allowCompaniesChainPage": true,
+                "runningCampaignFromLanding": true,
+                "tmpSberbStubsDisabled": true,
+                "subscriptionCampaignGoals": true,
+                "googlePlatformPluggedInTexts": true,
+                "hideArbitrageFieldsInProduct": true,
+                "renderMissingGoalLegend": true,
+                "permanentHidePriority": true,
+                "show-coupon-services": true,
+                "tmpLargeChainUseLightweightListForMaterials": true,
+                "tmpEnableYmlInDraft": true,
+                "companiesCompanySearch": true,
+                "useUpsaleCustomBudget": true,
+                "zelibobaInPreview": true,
+                "subscribtionAutoGoals": true,
+                "changeWebUrlParts": true,
+                "webSubscriptionMediaExamples": true,
+                "useRenewalService": true,
+                "landlordDescriptionFeatures": true,
+                "hideBooking": true,
+                "tmpSpravCreateCompanyV3": true,
+                "unAuthSetupPage": true,
+                "tmpMapsCampaignAsyncPreview": true,
+                "telegramUseLongTimeoutApi": true,
+                "newTransitionToTheCampaignAdvertListPage": true,
+                "tmpMarketplacesInBlueprints": true,
+                "instaCanSee": true,
+                "tmpShowFeedsBanner": true,
+                "mergedAdvertMaterialsChart": true,
+                "hybridBudgetControl": true,
+                "priorityProductServicePage": true,
+                "newConstructorFeaturesSurvey": true,
+                "subscriptionStorefrontFillPopup": true,
+                "stopUsingPrivateTycoonAPI": true,
+                "forceUpdateProductCategoryToV2": true,
+                "allowCompaniesDetailedPage": true,
+                "competitorsHeatmapRating": true,
+                "subscriptionArbitrageProductPage": true,
+                "shortPeriodPay": true,
+                "arbitrateControl": true,
+                "tmpIntegrationRedirectToDraft": true,
+                "featuresForKz": true,
+                "advertName": true,
+                "galleryAdvertInPriority": true,
+                "handlePayerType": true,
+                "crmTelegramNotifications": true,
+                "removeTimeTargetingSettings": true,
+                "showOwnershipConfirmationLink": true,
+                "arbitrateMediaPreviewList": true,
+                "productServiceCategoryV2": true,
+                "allowEnablingAutoGoalInMetrika": true,
+                "ownAdvertsDatepickerField": true,
+                "tmpRealBannersInPreview": true,
+                "tmpProductListDegradation": true,
+                "companyCampaignsPriceGuide": true,
+                "uniqueSourcesInStorefrontFillPopup": true,
+                "pageDimBackground": true,
+                "leadToInstagramTitle": true,
+                "priorityPurchase": true,
+                "subscriptionInstagramSettings": true,
+                "showSocialButtonsInstagram": true,
+                "renewalFromMinPrice": true,
+                "showAccordeonSidebar": true,
+                "businessSnapshotPriceIncreaseWarning": true,
+                "show-free-coupons": true,
+                "campaignListGuide": true,
+                "kzSubscription": true,
+                "installmentProlong": true,
+                "createFeedAdvertBeforeDraft": true,
+                "tmpExtendedBeneficiaryNotification": true,
+                "commonBusinessCabinet": true,
+                "newChartDescription": true,
+                "promotionMediaAutoArbitrateImage": true,
+                "paymentBeneficiaryInfo": true,
+                "campaignStatExcel": true,
+                "showHeaderOfNewBoostInFrame": true,
+                "agencyCommercialProposal": true,
+                "stopCreatingCompanyDraft": true,
+                "tmpShowSerpAuctionPlatform": true,
+                "advertDigestDimBackground": true,
+                "showInstagramSocialButton": true,
+                "companyModerationStatus": true,
+                "businessSnapshotRubricsSuggest": true,
+                "accessToCompaniesApp": true,
+                "boostApp": true,
+                "budgetRecalculate": true,
+                "showGoalsStatInstagram": true,
+                "clientDelegatesList": true,
+                "subscriptionSeparateSwitchingPromoPages": true,
+                "showLandingAgreement": true,
+                "isCounterBadgeVisible": true,
+                "show-search-in-calendar": true,
+                "tmpNewStatisticPage": true,
+                "useSourceSuggestionsWithMultiLinks": true,
+                "integrationCampaign30Days": true,
+                "mdsPngRecommendationIcons": true,
+                "show-booking-shutdown": true,
+                "mdsChainStat": true,
+                "productsSort": true,
+                "adFixStat": true,
+                "collapseIdenticalGoals": true,
+                "fancyBudgetControl": true,
+                "competitorsRating": true,
+                "replacementNumberReissue": true,
+                "tmpKzInstagramAccountReconnect": true,
+                "audienceSummaryEventsStatistic": true,
+                "adUpsaleMinBudget": true,
+                "tmpPresaleExtended": true,
+                "adUpsaleEndDate": true,
+                "neuralNetworkPictures": true,
+                "collectUserInfo": true,
+                "instagramExtendedSettings": true,
+                "subscriptionDigestCampaignFeatures": true,
+                "hideExternalMetrika": true,
+                "websubscriptionStatisticSurvey": true,
+                "instagramSettingsDeletePostButton": true,
+                "faqButtons": true,
+                "decreaseCampaignDuration": true,
+                "newSourceTransitionForOzon": true,
+                "newCampaignEndpointTargetOptionsScene": true,
+                "showNotMatchedDeepClicks": true,
+                "showInstaPreviewSubscription": true,
+                "tmpPayerRuInnEdit": true,
+                "yandexBug": true,
+                "presaleCommercialProposalDownload": true,
+                "modalGuide": true,
+                "scrollToInvalidInputWithHeaderCorrection": true,
+                "satisfactionSurvey": true,
+                "tmpBoostCompanySelectReplacement": true,
+                "branchStatisticCharts": true,
+                "subscriptionProductPage": true,
+                "newTelegramPostsListUX": true,
+                "webSubscriptionBusinessSnapshotFeatures": true,
+                "editObservers": true,
+                "openApiCompanySearchUseLaas": true,
+                "priorityEcomProductFeed": true,
+                "useSelectedFilterForGallery": true,
+                "campaignsRedirectFromLanding": true,
+                "showAdvertTime": true,
+                "showLinkToThePriceList": true,
+                "multiLinksForMarketplaceCampaigns": true,
+                "webSubscriptionCallTracking": true,
+                "allowCompaniesOwnershipConfirmation": true,
+                "subscriptionMarketType": true,
+                "tmpNewSubscriptionProductsPage": true,
+                "showHowItWorksBlock": true,
+                "bannersPreviewGEOPROD19600": true,
+                "tmpAsyncNeuralBannerSuggest": true,
+                "crmRequestsListCompactView": true,
+                "tmpGetCampaignWithoutPromo": true,
+                "tmpPlatformBasedCampaignStatus": true,
+                "markInstagramAccountActual": true,
+                "settingsFeaturesImagesForm": true,
+                "websubscriptionGoalsStat": true,
+                "show-settings-phone": true,
+                "callTrackingSubscriptionStatExcel": true,
+                "separateGoalsForMarketplaces": true,
+                "adRecommendationBadges": true,
+                "priorityHandleCompanyModerationStatus": true,
+                "navigationToSpravFromCompanySidebar": true,
+                "tmpCrmPhotoPicker": true,
+                "crmRequestPermissions": true,
+                "tmpReplacementNumberReissueNonChain": true,
+                "show-custom-cta-button-in-landing": true,
+                "telegramStatisticCredentials": true,
+                "callTracking": true,
+                "multiSubscriptionChangeUrl": true,
+                "nonAuthorizedAdvertizeOnLanding": true,
+                "chainSubscription": true,
+                "headerUserIdPopup": true,
+                "show-request-created-checkbox": true,
+                "tycoonHeadless": true,
+                "telegramPreselectV2": true,
+                "useIframeSpravLinkInWidget": true,
+                "showOnboardingPrices": true,
+                "prioritySearch": true,
+                "upsaleWebCampaign": true,
+                "galleryAdvertInSubscription": true,
+                "campaignDisplayArbitrate": true,
+                "dragAndDropForProductList": true,
+                "icoForCustomBudget": true,
+                "isVisiblePlayPauseButton": true,
+                "autoActivate": true,
+                "landlordAttractCustomers": true,
+                "bell": true,
+                "tmpWebmasterWebSubscription": true,
+                "promocodeBPlusNotification": true,
+                "showGoalsStatLanding": true,
+                "usePredictionService": true,
+                "websubscriptionStatisticPage": true,
+                "webSubscriptionMediaPageV2": true,
+                "webSubscriptionMediaPageV3": true,
+                "feedPreviewFromCommonEndpoint": true,
+                "disablePlatforms": true,
+                "tmpInstagramSettingsAddress": true,
+                "instagramNewCompany": true,
+                "checkBalanceAlreadyRequest": true,
+                "tmpEnableSourcesPopup": true,
+                "show-gift-coupons": true,
+                "multipleProductCurrency": true,
+                "headlineMediaArbitrateImage": true,
+                "shortCompanyByPermalink": true,
+                "headersAsRecord": true,
+                "coloredBanners": true,
+                "uxFeedback": true,
+                "dndImageUploaderPlate": true,
+                "defaultDaysDuration": true,
+                "newCompetitorsNotificationPoster": true,
+                "stopUsingPrivateTycoonApiCreateUser": true,
+                "tmpCacheCreateCampaign": true,
+                "tmpAuctionUpsaleCompensation": true,
+                "show-services-request-cta": true,
+                "importBlockForArbitrageProduct": true,
+                "productsWebSubscription": true,
+                "allowCreateLandingByUrl": true,
+                "textImageAds": true,
+                "multiSourceImageSelect": true,
+                "instagramSettingsHeaderCTAButton": true,
+                "webSubscriptionHistory": true,
+                "adWhatsAppInChatWidget": true,
+                "redirectToSpravVerify": true,
+                "tmpChainMultistageBoost": true,
+                "createCompany": true,
+                "displayPriceFixedUntil": true,
+                "presetExternalAdverts": true,
+                "tmpAsyncCopyAdvertFromCampaignToCampaign": true,
+                "branchesHasCampaignFilterInCampaign": true,
+                "launchInstaStatistic": true,
+                "totalBusinessSnapshotStat": true,
+                "hideStatisticCompetitors": true,
+                "dashBackSignTicket": true,
+                "spravDeliveryEcom": true,
+                "handleCompanyCreatorVerification": true,
+                "upsaleBudgetQuery": true,
+                "tmpBeneficiaryBackendValidation": true,
+                "onlyDiscoveryDeepClicksForSubscription": true,
+                "subscriptionCampaign": true,
+                "crmSubscriptionButton": true,
+                "tmpOneSimpleAmPreview": true,
+                "companiesUsersTab": true,
+                "okrForOwnAdverts": true,
+                "handleNotOwned": true,
+                "tmpUnifiedCallTracking": true,
+                "tmpValidateProductLinkForWeb": true,
+                "hideAdverizeWithActiveGeoproductOrders": true,
+                "galleryImageUploader": true,
+                "landingEcommerce": true,
+                "landingGeoproduct": true,
+                "acClientDomain": true,
+                "tmpExtendedBeneficiaryForm": true,
+                "beneficiaryOnPayersPage": true,
+                "dashCollapseRoles": true,
+                "tmpDisplayActualSlugForLandings": true,
+                "showLandingPreviewSubscription": true,
+                "requestsTab": true,
+                "saveCampaignV2": true,
+                "presaleSidebar": true,
+                "mergeFeedsWithArbitrageProducts": true,
+                "partnerWidgetBoostLanding": true,
+                "tmpSerpAuctionWithChains": true,
+                "statisticGetQueries": true,
+                "tmpImagedOwnAdvertMlGeneration": true,
+                "arbitrateMediaPreviewLikeDislike": true,
+                "promoRedesignNewCampaigns": true,
+                "fancyBudgetControlShiftBreakpoints": true,
+                "findBusinessSnapshotAmongChains": true,
+                "uxFeedbackSprav": true,
+                "tmpWaitLongVisibilityBeforeRequestFeedback": true,
+                "listViewAutoGoals": true,
+                "instaSiteGdu": true,
+                "onlineCompanies": true,
+                "supportPhone": true,
+                "moveCompaniesPermalinks": true,
+                "promocodeGoodPlaceNotification": true,
+                "tmpEnforceCSP": true,
+                "tmpExtendedBeneficiaryDraft": true,
+                "hideStatWithoutLabel": true,
+                "conversionToSubscription": true,
+                "calculateCompanyHasAccessToAdv": true,
+                "notBoundedPrice": true,
+                "showServicesSectionInConstructor": true,
+                "campaignBranchesSelectV2Available": true,
+                "showStatusDescriptionTooltip": true,
+                "partnerWidget": true,
+                "tmpAuctionRecalculate": true,
+                "websubscriptionMultipleCounters": true,
+                "hideUxFeedbackInFrame": true,
+                "createFeedForSubscription": true,
+                "advertBranchesSelectV2Available": true,
+                "partnerWidgetFooter": true,
+                "stopUsingPrivateTycoonApiUpdateCompany": true,
+                "upsaleForDaysHint": true,
+                "permalinksMode": true,
+                "chainStatCollection": true,
+                "prolongationNewUI": true,
+                "promocodeGreenNotification": true,
+                "showSubscriptionMainStatistic": true,
+                "companiesRequests": true,
+                "instagramSettingsTabView": true,
+                "showSitePreviewSubscription": true,
+                "newWidgetMigration": true,
+                "showPlatformsBlock": true,
+                "webSubscriptionSettings": true,
+                "tmpPresaleChainFetchingActiveCampaignIgnore": true,
+                "totalDeepUsesStat": true,
+                "tmpNewAdvertPlatforms": true,
+                "statAdvert": true,
+                "useGoodApiForPromoutedServices": true,
+                "tmpPartnerPromoDistributionId": true,
+                "clientPhoneSettings": true,
+                "tmpPayerRuNewInnRequired": true,
+                "allowDirectProductChoice": true,
+                "ydoCampaign": true,
+                "forecastCtaForInsta": true,
+                "tmpInstagramNewPost": true,
+                "tmpFixPriceWebSubscription": true,
+                "VkontakteTargetingSettings": true,
+                "hideInstagramSupportChartAndPhone": true,
+                "compactCampaignControls": true,
+                "tmpInstagramPostsPage": true,
+                "forbidIntegrationCreation": true,
+                "multiSubscription": true,
+                "settingsStandaloneApp": true,
+                "campaignDisplayBudget": true,
+                "subscriptionTelegramPostPage": true,
+                "multiSubscriptionCTA": true,
+                "instagramCTATabView": true,
+                "tmpWebCampaignCompanyOwnership": true,
+                "newCategoriesInput": true,
+                "checkLandingCampaignForCrm": true,
+                "showCompaniesApp": true,
+                "tmpLandingsLinkNewCompany": true,
+                "boostCompanyPreferredProduct": true,
+                "newFetchOrGenerateLanding": true,
+                "ignoreHideBoostPriority": true,
+                "tmpIntegrationSettingActionMenu": true,
+                "enableWebExportToMaps": true,
+                "sortedWebsubscriptionGoalsStat": true,
+                "campaignCompetitorsSurvey": true,
+                "CompetitorsPage": true,
+                "shortPathCreateSiteSubscription": true,
+                "vkAndTelegramPreviewFromCommonEndpoint": true,
+                "payerFormV2": true,
+                "tmpAuctionUpsaleDaysCharge": true,
+                "newBannersInLK": true,
+                "websubscriptionStatisticArbitrateChart": true,
+                "tmpGetLastFeatureSubmission": true,
+                "companiesFeatures": true,
+                "mapsOnlyPlatform": true,
+                "cropAdvertPhoto": true,
+                "textImageAdsPreview": true,
+                "lastStableDate": true,
+                "tmpIntegrationPermalinkBind": true,
+                "tmpShowTotalItemsCountInFeedPreview": true,
+                "subscriptionVkType": true,
+                "ozonStatisticCredentials": true,
+                "scrollablePlatformPreviewGallery": true,
+                "tmpPresaleIcoMultiTab": true,
+                "competitorsTabInWidget": true,
+                "urlValidationInput": true,
+                "supportChat": true,
+                "companiesDisplayCompanyModerationStatus": true,
+                "hideStatWithoutGrants": true,
+                "enabledMapsPlatformFeedback": true,
+                "tmpShowDynamicInCharts": true,
+                "openApiCheckBeneficiaryOnLaunch": true,
+                "tmpOpenApiBeneficiaryBackendValidation": true,
+                "tmpJingleForCaller": true,
+                "imageUploadComponentV2": true,
+                "advertizeOnLanding": true,
+                "adUpsaleOfferNewUI": true,
+                "allowCompanySelect": true,
+                "tmpWebCampaignMediaModeration": true,
+                "tycoonBookingStat": true,
+                "openApiWebSubscription": true,
+                "tmpKzPlatformInstagram": true,
+                "wildWebFeed": true,
+                "allowTextGenerator": true,
+                "payersListDisplayType": true,
+                "serpAuctionOnlyStatHotfix": true,
+                "internalInvoice": true,
+                "tmpGetCampaignWithoutAdverts": true,
+                "modalOwnershipConfirmation": true,
+                "tmpFixateProlongation": true,
+                "webSubscriptionBusinessSnapshotDigestPage": true,
+                "companiesBookingTab": true,
+                "tmpCreateCompanyWithoutWebsite": true,
+                "aggregatedClicks": true,
+                "quickPayment": true,
+                "subscriptionVkWithMaps": true,
+                "goalsNothingToShowWithHelpForm": true,
+                "advertCtaRequestOption": true,
+                "displayAdditionalBudget": true,
+                "featureRequestLamp": true,
+                "companyMapsPreviewImage": true,
+                "upsaleActualPredictionInPaymentLink": true,
+                "companyNavNewVerificationCheck": true,
+                "tmpExtendedBeneficiaryDescription": true,
+                "priorityBusinessFeatures": true,
+                "tmpWebWithMapStat": true,
+                "innerLogoHeadlineByDefault": true,
+                "multistageBoost": true,
+                "useSuggestForTheOzon": true,
+                "statisticArbitrateChart": true,
+                "budgetCalculation": true,
+                "promotionMediaArbitrateImage": true,
+                "campaignFinishDate": true,
+                "tmpUpsaleOfferWithBuff": true,
+                "sidebarServerComponent": true,
+                "TelegramPostAutoParser": true,
+                "callTrackingStat": true,
+                "convertSubsidy": true,
+                "footerInfoLinks": true,
+                "spravLoadableSidebar": true,
+                "arbitrateMediaPreview": true,
+                "tgPercentBonusPromocodePoster": true,
+                "webSubscriptionMediaExamplesForInsta": true,
+                "openNewMasterForTelegram": true,
+                "recalculateGduCountAndPrice": true,
+                "tmpInstagramAccountCreateCampaign": true,
+                "adLogoRKList": true,
+                "VkEditLandingTab": true,
+                "subscriptionCampaignPageTabs": true,
+                "subscriptionTelegramPostsPage": true,
+                "webCampaignTuningPage": true,
+                "showManagerCard": true,
+                "companySidebarTouch": true,
+                "onlineCampaigns": true,
+                "tmpPresalePageRefactoring": true,
+                "allowCompaniesPhotosPage": true,
+                "promocodeNotificationMessage": true,
+                "partnerWidgetLanding": true,
+                "tmpBoostUrlLengthChecking": true,
+                "hybridBudgetMultiChainFix": true,
+                "telegramCampaignTopPosts": true,
+                "createWebCampaignV2": true,
+                "companiesSiteTab": true,
+                "competitorsOwnCompanyHasActiveCampaigns": true,
+                "tmpUnifiedKzChain": true,
+                "dashShowActualizationStatus": true,
+                "multisubStatMapCorrection": true,
+                "tmpUseBudgetByInitialAmountUpsale": true,
+                "TelegramTargetingSettings": true,
+                "lastProcessedDate": true,
+                "asyncPreviewForAdditionalAc": true,
+                "hideProlongPoster": true,
+                "pauseRunAdvert": true,
+                "eventSummaryStatOnKinds": true,
+                "priorityCampaignCreation": true,
+                "tmpCampaignBranchesRefactoring": true,
+                "partnerWidgetMultistageBoost": true,
+                "tmpAsyncPreview": true,
+                "auctionUpsale": true,
+                "landlordMessengers": true,
+                "newStatisticDownload": true,
+                "readAdvertisingTemplates": true,
+                "ownAdvertsForLanding": true,
+                "subscriptionOzonType": true,
+                "sberPayNewWindow": true,
+                "totalStatisticMultipleCounters": true,
+                "promocode": true,
+                "tmpSerpAuctionPlatformPriority": true,
+                "tmpStrictMediaLaw": true,
+                "nonStaffCampaignCreation": true,
+                "companiesReviews": true,
+                "boostAppRedirects": true,
+                "ICOWebSubscription": true,
+                "newBrandingICPGenerator": true,
+                "beneficiaryRkBannerAndSettings": true,
+                "supportPartnerFeedLink": true,
+                "partnerUsers": true,
+                "customBudgetControl": true,
+                "tmpCampaignStatusFromBackend": true,
+                "getImageInfoAvatars": true,
+                "newTransitionToTheAdvertProductListPage": true,
+                "googleDisabledDisclaimer": true,
+                "organizationFeaturesSurvey": true,
+                "mapsOnlyForWebOnNewCampaign": true,
+                "show-orders-history": true,
+                "adPriorityOfferUpsale": true,
+                "dynPrice": true,
+                "promocodeExperimentPoster": true,
+                "deepClicks": true,
+                "subsidyPayerAlarm": true,
+                "discountAdvertCreation": true,
+                "allowCreateCompanyForLanding": true,
+                "campaignEndpointDiagram": true,
+                "callTrackingStatExcel": true,
+                "newCtaMechanicsUiForCrm": true,
+                "presaleBranchesSelectV2": true,
+                "paymentMethods": true,
+                "asyncProductFeedSiteAction": true,
+                "newDraftLogicForOzon": true,
+                "tmpMultiOfferOpenApi": true,
+                "tmpSubscriptionShowGoodsFeedInDraft": true,
+                "feedMediaPreview": true,
+                "hasLandingCalltracking": true,
+                "tmpRealBannersInPreviewV2": true,
+                "tmpRejectedMediaInDegradationCaseFix": true,
+                "statActionsInCard": true,
+                "upsale": true,
+                "separatePaymentMethods": true,
+                "tmpCreateCompanyForMulti": true,
+                "tmpShowAdUsefullCasesInputInSurveys": true,
+                "webPromotionMoveMapsTab": true,
+                "acPartnership": true,
+                "presaleCampaignCreation": true,
+                "userCardSimpleDropdownInWidget": true,
+                "websubscriptionQuickPayment": true,
+                "tmpIsCompetitorsPageNew": true,
+                "handleCurrencyMismatch": true,
+                "subscriptionFor30Days": true,
+                "dashCreateCleanTickets": true,
+                "boostUnifiedChainWithOldSubscription": true,
+                "recurringPaymentWriteOff": true,
+                "companiesSettingsTab": true,
+                "showBookMapsCtaButtonInLanding": true,
+                "instagramPostsEdit": true,
+                "showBreadcrumbsForAdvertList": true,
+                "arbitrateRate": true,
+                "directModeration": true,
+                "validateBeneficiaryOnSave": true,
+                "webSubscriptionCallDurationTracking": true,
+                "showOrganizationSettingsCard": true,
+                "tmpExtendedBeneficiarySettings": true,
+                "upsaleStraightUrl": true,
+                "platformsCountryUnavailable": true,
+                "show-services-multi-edit": true,
+                "tmpPreviewBeforePurchase": true,
+                "showInstagramFacebookStatChart": true,
+                "websubscriptionAllowRenewal": true,
+                "hideIntegrationsIfNoAccounts": true,
+                "priorityCampaignPlatforms": true,
+                "upsaleOffer": true,
+                "adFeatureImagesAndCampaignGallery": true,
+                "tmpYmlWebSubscription": true,
+                "boostInstagram": true,
+                "customPriceOnPresale": true,
+                "subscriptionPreviewCountLimit": true,
+                "partnerAttachPromoSettings": true,
+                "tmpAuctionUpsaleForGeoChains": true,
+                "showNewBoostInFrame": true,
+                "forceOnMultiExp": true,
+                "clientEmailSettings": true,
+                "tmpPaymentModeMapsOnly": true,
+                "changeWebUrlFull": true,
+                "adFixAverageCallDuration": true,
+                "tmpSplit": true,
+                "tmpShowPostsInDraft": true,
+                "subscriptionCTAPage": true,
+                "tmpDirectAllowUseGoalsWithoutAccessGrants": true,
+                "tmpICOMultiV2": true,
+                "showRequestCtaButtonInLanding": true,
+                "audienceServicesChart": true,
+                "allowCompaniesEdit": true,
+                "redirectToKzWithTenge": true,
+                "previewAdvertTextFromUserInput": true,
+                "recalculateV2": true,
+                "multistageBoostOpenGoalFromWidget": true,
+                "redirectToDraftAfterCompanyCreation": true,
+                "hideRubricsForFeedDraft": true,
+                "ndaStatisticForLast30Days": true,
+                "unifiedCampaignTarget": true,
+                "innerLogoHeadline": true,
+                "tmpQuickPaymentForKzt": true,
+                "tmpShowSiteStatForSerpAuction": true,
+                "allowStatistic": true,
+                "salesPhoneOnLanding": true,
+                "disableSubsidyClaimFields": true,
+                "subscriptionWildberriesType": true,
+                "endpointMultilinks": true,
+                "companiesCouponsTab": true,
+                "recurringPayment": true
+            },
+            "abTestGroups": {
+                "adWhatsAppInChatWidget": "ON",
+                "showAdUsefullCasesInputOnBoost": "OFF",
+                "adRecommendationBadges": "ON",
+                "upsaleNewStyle": "ON",
+                "VkWithMaps": "ON",
+                "partnerWidgetNewDesignLandings": "ON",
+                "unauthSetupPage": "OFF",
+                "subscriptionMainPageStubMapAuth": "OFF",
+                "allowDirectProductChoice": "OFF",
+                "companyBlueprintLandingExp": "OFF",
+                "unifiedChain": "ON",
+                "companyCompetitors": "NEW",
+                "statistic": "NEW",
+                "boostSwitch": "CONTROL",
+                "multiSubscription": "ON",
+                "externalAdSitePreviews": "HIDE_SITE_PREVIEWS",
+                "onboardingShowPrices": "SHOW_DAYS",
+                "boostFirstCard": "SUBSCRIPTION",
+                "crystalsInTotalStat": "NO_CRYSTALS",
+                "budgetDescriptions": "NEW",
+                "convenienceSurvey": "DEFAULT_2",
+                "subscriptionCampaignPageTabs": "ON",
+                "managerCard": "HIDE",
+                "permalinkTest": "OFF",
+                "pessimisticPrediction": "ON"
+            },
+            "systemRole": "client",
+            "userSegmentation": {
+                "balance_client_id": 304883123,
+                "has_chain_access": false,
+                "has_permalink_access": true,
+                "for_direct_popup": false,
+                "customer_type": "free"
+            },
+            "expBoxes": [
+                "1111484,0,62"
+            ],
+            "expBoxesCrypted": "1wDmC4m_zNVpFoO-OfPShA,,",
+            "uatraits": {
+                "BrowserBase": "Chromium",
+                "BrowserBaseVersion": "131.0.0.0",
+                "BrowserEngine": "WebKit",
+                "BrowserEngineVersion": "537.36",
+                "BrowserName": "Chrome",
+                "BrowserVersion": "131.0.0.0",
+                "CSP1Support": true,
+                "CSP2Support": true,
+                "OSFamily": "MacOS",
+                "OSName": "macOS Catalina",
+                "OSVersion": "10.15.7",
+                "SVGSupport": true,
+                "SameSiteSupport": true,
+                "WebPSupport": true,
+                "historySupport": true,
+                "isBrowser": true,
+                "isMobile": false,
+                "isTouch": false,
+                "localStorageSupport": true,
+                "postMessageSupport": true,
+                "isTurboApp": false,
+                "isSearchApp": false,
+                "isYandexBrowser": false,
+                "yaPlatform": "desktop"
+            },
+            "geo": {
+                "region_id": 14,
+                "position": [
+                    56.858745,
+                    35.917421
+                ],
+                "coordinates": [
+                    56.858745,
+                    35.917421
+                ],
+                "parents": [
+                    14,
+                    120922,
+                    10819,
+                    3,
+                    225,
+                    10001,
+                    10000
+                ],
+                "region": {
+                    "id": 14,
+                    "type": 6,
+                    "parent_id": 120922,
+                    "geo_parent_id": 0,
+                    "capital_id": 0,
+                    "name": "Тверь",
+                    "native_name": "",
+                    "iso_name": "RU TVR",
+                    "is_main": true,
+                    "en_name": "Tver",
+                    "short_en_name": "TVR",
+                    "phone_code": "4822",
+                    "zip_code": "",
+                    "position": 0,
+                    "population": 420065,
+                    "synonyms": "Tver'",
+                    "latitude": 56.858745,
+                    "longitude": 35.917421,
+                    "latitude_size": 0.152804,
+                    "latitiude_size": 0.152804,
+                    "longitude_size": 0.339025,
+                    "zoom": 12,
+                    "tzname": "Europe\u002FMoscow",
+                    "official_languages": "ru",
+                    "widespread_languages": "ru",
+                    "services": [
+                        "bs",
+                        "yaca",
+                        "weather",
+                        "afisha",
+                        "maps",
+                        "tv",
+                        "ad",
+                        "etrain",
+                        "delivery",
+                        "route"
+                    ]
+                }
+            },
+            "isInternalRequest": false,
+            "diffs": {
+                "companies_with_changes_count": 0
+            },
+            "gpUserType": "user"
+        },
+        "env": {
+            "enviroment": "production",
+            "query": {},
+            "metrika": {
+                "id": 39321485,
+                "errorId": "45129582",
+                "geoadvId": 46231566,
+                "smb": 56213845
+            },
+            "delivery": {
+                "platform_station": "741fb948-bf3e-4878-8bfa-263dfb300b10"
+            },
+            "hosts": {
+                "yaRu": "https:\u002F\u002Fya.ru",
+                "businessPriority": "\u002Fbusiness\u002Fpriority",
+                "forms": "https:\u002F\u002Fforms.yandex.ru",
+                "formsCom": "https:\u002F\u002Fforms.yandex.com",
+                "help": "https:\u002F\u002Fyandex.ru\u002Fsupport\u002Fbusiness-priority",
+                "promo": "https:\u002F\u002Fyandex.ru\u002Fpromo",
+                "webmaster": "https:\u002F\u002Fwebmaster.yandex.ru",
+                "goodPlaceLanding": "https:\u002F\u002Fyandex.ru\u002Fproject\u002Fmaps\u002Fgoodplace",
+                "uxFeedbackFrameSrc": "https:\u002F\u002Fpriority.s3.yandex.net\u002Fux-feedback.html",
+                "yangoUserAgreementLink": "https:\u002F\u002Fyango.com\u002Flegal\u002Fyangomaps_termsofuse",
+                "yangoPrivacyPolicyLink": "https:\u002F\u002Fyango.com\u002Flegal\u002Fyangomaps_privacy",
+                "yangoBusinessHelp": "https:\u002F\u002Fbusiness.yango.com\u002Fsupport",
+                "userAgreementLink": "https:\u002F\u002Fyandex.ru\u002Flegal\u002Frules",
+                "privacyPolicyLink": "https:\u002F\u002Fyandex.ru\u002Flegal\u002Fconfidential",
+                "yandex": "yandex.ru",
+                "yandexRu": "yandex.ru",
+                "altay": "https:\u002F\u002Faltay.maps.yandex-team.ru",
+                "direct": "https:\u002F\u002Fdirect.yandex.ru\u002F",
+                "photoUploadApi": "https:\u002F\u002Fphoto.upload.maps.yandex.ru\u002Fapi\u002Fv1",
+                "yangoPhotoUploadApi": "https:\u002F\u002Fphoto-upload.maps.yango.com\u002Fapi\u002Fv1",
+                "yango": "https:\u002F\u002Fyango.com",
+                "yangoPassport": "https:\u002F\u002Fpassport.yango.com",
+                "yangoBusiness": "https:\u002F\u002Fbusiness.yango.com",
+                "yangoMaps": "https:\u002F\u002Fmaps.yango.com",
+                "avatarsGet": "https:\u002F\u002Favatars.mds.yandex.net"
+            },
+            "host": "yandex.ru",
+            "routePrefix": "\u002Fsprav",
+            "csrf": "2080d3bcac0a615b4b93828c3d0da23956d8d495:1734378584",
+            "tld": {
+                "value": "ru",
+                "isKubr": true,
+                "hasPayments": true
+            },
+            "nonce": "jrDToO6I1Dq6GZ6Fzh5\u002FsA==",
+            "path": "\u002F43297404\u002Fedit\u002Fposts",
+            "isTestplane": false,
+            "useStub": false,
+            "platform": "desktop",
+            "icookie": "5922328191691828084",
+            "langDetect": {
+                "id": "ru",
+                "name": "Ru"
+            },
+            "version": "822",
+            "yandexEnvironment": "production",
+            "isYangoTouchPage": false,
+            "isGoIframe": false,
+            "isYaRu": false
+        }
+    },
+    "initialState": {
+        "flags": {
+            "needNotificationsPromo": false,
+            "showChatWidget": true,
+            "hasUserInstagramIntegrations": false,
+            "hasActiveGeoCampaign": true,
+            "isWaitingGeoCampaign": true,
+            "canOrderPriority": true,
+            "showAdvertiseGoodPlace": false,
+            "showTouchCompanyMenu": false,
+            "isKubrAvailable": true,
+            "managerHasEditRestrictionData": false
+        },
+        "isLocalStorageSynced": false,
+        "user": {
+            "status": "VALID",
+            "uid": 2016744911,
+            "lang": "ru",
+            "displayName": "Антон",
+            "avatar": "26311\u002F0c-4",
+            "addressList": [
+                "Bservis70@yandex.ru"
+            ],
+            "login": "Bservis70",
+            "isYandexoid": false,
+            "phone": "+7 993 550‒44‒83",
+            "users": [],
+            "hasUserTicket": true,
+            "yandexuid": "5922328191691828084",
+            "permissions": {},
+            "experiments": [
+                "get_thermometers_from_geosearch",
+                "redirect_for_duplicates",
+                "new_moderation_mail",
+                "company_sorting",
+                "custom_review_author_calculation",
+                "booking_category_31529",
+                "booking_category_31407",
+                "booking_category_31528",
+                "booking_category_31649",
+                "booking_category_31657",
+                "booking_category_31656",
+                "booking_category_30689",
+                "booking_category_31530",
+                "booking_category_30321",
+                "booking_category_30681",
+                "booking_category_30207",
+                "booking_category_30208",
+                "booking_category_30214",
+                "booking_category_30578",
+                "booking_category_31426",
+                "booking_category_31546",
+                "booking_category_31420",
+                "booking_category_30331",
+                "booking_category_30210",
+                "booking_category_30211",
+                "review_new_comments",
+                "booking_category_3501624582",
+                "booking_category_3501418474",
+                "booking_category_31509",
+                "booking_category_30657",
+                "booking_category_31505",
+                "booking_category_31504",
+                "booking_category_30658",
+                "booking_category_31507",
+                "booking_category_31511",
+                "booking_category_31634",
+                "booking_category_3501611069",
+                "booking_category_3491649165",
+                "booking_category_3491649163",
+                "booking_category_30789",
+                "booking_category_31637",
+                "booking_category_31636",
+                "booking_category_30308",
+                "booking_category_31523",
+                "booking_category_30434",
+                "booking_category_31401",
+                "booking_category_31404",
+                "booking_category_31525",
+                "booking_category_31524",
+                "booking_category_30310",
+                "booking_category_30795",
+                "booking_category_274864961",
+                "booking_category_20679",
+                "booking_category_30248",
+                "booking_category_30485",
+                "booking_category_31334",
+                "booking_category_31450",
+                "booking_category_31588",
+                "booking_category_30259",
+                "booking_category_31107",
+                "booking_category_30495",
+                "booking_category_3501621390",
+                "booking_category_30377",
+                "booking_category_31580",
+                "booking_category_31462",
+                "booking_category_31461",
+                "booking_category_3493720533",
+                "booking_category_144152359",
+                "booking_category_30345",
+                "booking_category_3501604600",
+                "booking_category_31316",
+                "booking_category_30221",
+                "booking_category_31551",
+                "booking_category_3501478864",
+                "booking_category_3501571789",
+                "booking_category_30352",
+                "booking_category_30233",
+                "booking_category_30355",
+                "booking_category_3501598014",
+                "booking_category_31137",
+                "booking_category_31375",
+                "booking_category_31136",
+                "booking_category_30289",
+                "booking_category_30161",
+                "booking_category_31492",
+                "booking_category_30163",
+                "booking_category_31495",
+                "booking_category_31131",
+                "booking_category_31252",
+                "booking_category_31373",
+                "booking_category_3501478922",
+                "booking_category_31029",
+                "booking_category_31387",
+                "booking_category_31265",
+                "booking_category_30177",
+                "booking_category_31146",
+                "booking_category_31022",
+                "booking_category_31264",
+                "booking_category_30170",
+                "booking_category_31116",
+                "booking_category_31118",
+                "booking_category_3501483288",
+                "header_for_geoprod",
+                "booking_category_31595",
+                "booking_category_30266",
+                "booking_category_30387",
+                "booking_category_31592",
+                "booking_category_30260",
+                "booking_category_30261",
+                "booking_category_31110",
+                "booking_category_31472",
+                "booking_category_3501497449",
+                "booking_category_31119",
+                "booking_category_31368",
+                "booking_category_31128",
+                "booking_category_30396",
+                "booking_category_30155",
+                "booking_category_31122",
+                "booking_category_30156",
+                "booking_category_30157",
+                "booking_category_30273",
+                "booking_category_30394",
+                "booking_category_20276",
+                "booking_category_21480",
+                "booking_category_3501647395",
+                "booking_category_3501571807",
+                "booking_category_3501627308",
+                "booking_category_1180056060",
+                "booking_category_30085",
+                "booking_category_31297",
+                "booking_category_31293",
+                "booking_category_31292",
+                "booking_category_21237",
+                "booking_category_21470",
+                "booking_category_31069",
+                "booking_category_30096",
+                "booking_category_31066",
+                "booking_category_31065",
+                "booking_category_21386",
+                "booking_category_21023",
+                "booking_category_262003042",
+                "booking_category_3501569754",
+                "booking_category_3501571704",
+                "booking_category_31157",
+                "booking_category_30181",
+                "booking_category_859588950",
+                "booking_category_30078",
+                "booking_category_31284",
+                "booking_category_31286",
+                "booking_category_30192",
+                "booking_category_3501656614",
+                "booking_category_3501539206",
+                "booking_category_31098",
+                "booking_category_31092",
+                "booking_category_31095",
+                "booking_category_31094",
+                "booking_category_3501479076",
+                "booking_category_31072",
+                "booking_category_3501523183",
+                "booking_category_1191769628",
+                "booking_category_31081",
+                "booking_category_31084",
+                "booking_category_3501631880",
+                "booking_category_30810",
+                "booking_category_3501527629",
+                "booking_category_3501479397",
+                "booking_category_30907",
+                "booking_category_30905",
+                "booking_category_30906",
+                "booking_category_3480798811",
+                "booking_category_30717",
+                "booking_category_30718",
+                "booking_category_30719",
+                "booking_category_3501632374",
+                "booking_category_30961",
+                "booking_category_3501624630",
+                "booking_category_3501479454",
+                "geoprod_geovisor",
+                "booking_category_140638190",
+                "booking_category_30609",
+                "booking_category_30610",
+                "booking_category_30853",
+                "booking_category_30937",
+                "booking_category_30940",
+                "booking_category_3501479471",
+                "booking_category_263455525",
+                "booking_category_30706",
+                "booking_category_30703",
+                "booking_category_30946",
+                "booking_category_3501411425",
+                "booking_category_3501620048",
+                "booking_category_3501571694",
+                "booking_category_3501620049",
+                "booking_category_30756",
+                "booking_category_30998",
+                "booking_category_30757",
+                "booking_category_30758",
+                "booking_category_30759",
+                "booking_category_30764",
+                "booking_category_30765",
+                "booking_category_30887",
+                "booking_category_30761",
+                "booking_category_31619",
+                "booking_category_30409",
+                "booking_category_30767",
+                "booking_category_30405",
+                "booking_category_30647",
+                "booking_category_30768",
+                "booking_category_30406",
+                "booking_category_30895",
+                "booking_category_30412",
+                "booking_category_31621",
+                "booking_category_30775",
+                "booking_category_31503",
+                "booking_category_30770",
+                "booking_category_30410",
+                "booking_category_3501482702",
+                "booking_category_20612",
+                "booking_category_30738",
+                "show_collections_link",
+                "booking_category_30735",
+                "booking_category_30741",
+                "booking_category_30985",
+                "booking_category_30740",
+                "booking_category_3501478105",
+                "booking_category_20728",
+                "booking_category_3501478101",
+                "booking_category_3501478108",
+                "booking_category_3501479439",
+                "booking_category_3501479438",
+                "booking_category_30626",
+                "booking_category_30748",
+                "booking_category_30995",
+                "booking_category_30755",
+                "booking_category_30750",
+                "booking_category_3501623876",
+                "direct_api_v3",
+                "chain_lenta",
+                "route_to_updates_from_companies",
+                "company_lenta"
+            ],
+            "expFeatures": {
+                "allowSyncLandingCallTrackingTask": true,
+                "allowCompaniesChainPage": true,
+                "runningCampaignFromLanding": true,
+                "tmpSberbStubsDisabled": true,
+                "subscriptionCampaignGoals": true,
+                "googlePlatformPluggedInTexts": true,
+                "hideArbitrageFieldsInProduct": true,
+                "renderMissingGoalLegend": true,
+                "permanentHidePriority": true,
+                "show-coupon-services": true,
+                "tmpLargeChainUseLightweightListForMaterials": true,
+                "tmpEnableYmlInDraft": true,
+                "companiesCompanySearch": true,
+                "useUpsaleCustomBudget": true,
+                "zelibobaInPreview": true,
+                "subscribtionAutoGoals": true,
+                "changeWebUrlParts": true,
+                "webSubscriptionMediaExamples": true,
+                "useRenewalService": true,
+                "landlordDescriptionFeatures": true,
+                "hideBooking": true,
+                "tmpSpravCreateCompanyV3": true,
+                "unAuthSetupPage": true,
+                "tmpMapsCampaignAsyncPreview": true,
+                "telegramUseLongTimeoutApi": true,
+                "newTransitionToTheCampaignAdvertListPage": true,
+                "tmpMarketplacesInBlueprints": true,
+                "instaCanSee": true,
+                "tmpShowFeedsBanner": true,
+                "mergedAdvertMaterialsChart": true,
+                "hybridBudgetControl": true,
+                "priorityProductServicePage": true,
+                "newConstructorFeaturesSurvey": true,
+                "subscriptionStorefrontFillPopup": true,
+                "stopUsingPrivateTycoonAPI": true,
+                "forceUpdateProductCategoryToV2": true,
+                "allowCompaniesDetailedPage": true,
+                "competitorsHeatmapRating": true,
+                "subscriptionArbitrageProductPage": true,
+                "shortPeriodPay": true,
+                "arbitrateControl": true,
+                "tmpIntegrationRedirectToDraft": true,
+                "featuresForKz": true,
+                "advertName": true,
+                "galleryAdvertInPriority": true,
+                "handlePayerType": true,
+                "crmTelegramNotifications": true,
+                "removeTimeTargetingSettings": true,
+                "showOwnershipConfirmationLink": true,
+                "arbitrateMediaPreviewList": true,
+                "productServiceCategoryV2": true,
+                "allowEnablingAutoGoalInMetrika": true,
+                "ownAdvertsDatepickerField": true,
+                "tmpRealBannersInPreview": true,
+                "tmpProductListDegradation": true,
+                "companyCampaignsPriceGuide": true,
+                "uniqueSourcesInStorefrontFillPopup": true,
+                "pageDimBackground": true,
+                "leadToInstagramTitle": true,
+                "priorityPurchase": true,
+                "subscriptionInstagramSettings": true,
+                "showSocialButtonsInstagram": true,
+                "renewalFromMinPrice": true,
+                "showAccordeonSidebar": true,
+                "businessSnapshotPriceIncreaseWarning": true,
+                "show-free-coupons": true,
+                "campaignListGuide": true,
+                "kzSubscription": true,
+                "installmentProlong": true,
+                "createFeedAdvertBeforeDraft": true,
+                "tmpExtendedBeneficiaryNotification": true,
+                "commonBusinessCabinet": true,
+                "newChartDescription": true,
+                "promotionMediaAutoArbitrateImage": true,
+                "paymentBeneficiaryInfo": true,
+                "campaignStatExcel": true,
+                "showHeaderOfNewBoostInFrame": true,
+                "agencyCommercialProposal": true,
+                "stopCreatingCompanyDraft": true,
+                "tmpShowSerpAuctionPlatform": true,
+                "advertDigestDimBackground": true,
+                "showInstagramSocialButton": true,
+                "companyModerationStatus": true,
+                "businessSnapshotRubricsSuggest": true,
+                "accessToCompaniesApp": true,
+                "boostApp": true,
+                "budgetRecalculate": true,
+                "showGoalsStatInstagram": true,
+                "clientDelegatesList": true,
+                "subscriptionSeparateSwitchingPromoPages": true,
+                "showLandingAgreement": true,
+                "isCounterBadgeVisible": true,
+                "show-search-in-calendar": true,
+                "tmpNewStatisticPage": true,
+                "useSourceSuggestionsWithMultiLinks": true,
+                "integrationCampaign30Days": true,
+                "mdsPngRecommendationIcons": true,
+                "show-booking-shutdown": true,
+                "mdsChainStat": true,
+                "productsSort": true,
+                "adFixStat": true,
+                "collapseIdenticalGoals": true,
+                "fancyBudgetControl": true,
+                "competitorsRating": true,
+                "replacementNumberReissue": true,
+                "tmpKzInstagramAccountReconnect": true,
+                "audienceSummaryEventsStatistic": true,
+                "adUpsaleMinBudget": true,
+                "tmpPresaleExtended": true,
+                "adUpsaleEndDate": true,
+                "neuralNetworkPictures": true,
+                "collectUserInfo": true,
+                "instagramExtendedSettings": true,
+                "subscriptionDigestCampaignFeatures": true,
+                "hideExternalMetrika": true,
+                "websubscriptionStatisticSurvey": true,
+                "instagramSettingsDeletePostButton": true,
+                "faqButtons": true,
+                "decreaseCampaignDuration": true,
+                "newSourceTransitionForOzon": true,
+                "newCampaignEndpointTargetOptionsScene": true,
+                "showNotMatchedDeepClicks": true,
+                "showInstaPreviewSubscription": true,
+                "tmpPayerRuInnEdit": true,
+                "yandexBug": true,
+                "presaleCommercialProposalDownload": true,
+                "modalGuide": true,
+                "scrollToInvalidInputWithHeaderCorrection": true,
+                "satisfactionSurvey": true,
+                "tmpBoostCompanySelectReplacement": true,
+                "branchStatisticCharts": true,
+                "subscriptionProductPage": true,
+                "newTelegramPostsListUX": true,
+                "webSubscriptionBusinessSnapshotFeatures": true,
+                "editObservers": true,
+                "openApiCompanySearchUseLaas": true,
+                "priorityEcomProductFeed": true,
+                "useSelectedFilterForGallery": true,
+                "campaignsRedirectFromLanding": true,
+                "showAdvertTime": true,
+                "showLinkToThePriceList": true,
+                "multiLinksForMarketplaceCampaigns": true,
+                "webSubscriptionCallTracking": true,
+                "allowCompaniesOwnershipConfirmation": true,
+                "subscriptionMarketType": true,
+                "tmpNewSubscriptionProductsPage": true,
+                "showHowItWorksBlock": true,
+                "bannersPreviewGEOPROD19600": true,
+                "tmpAsyncNeuralBannerSuggest": true,
+                "crmRequestsListCompactView": true,
+                "tmpGetCampaignWithoutPromo": true,
+                "tmpPlatformBasedCampaignStatus": true,
+                "markInstagramAccountActual": true,
+                "settingsFeaturesImagesForm": true,
+                "websubscriptionGoalsStat": true,
+                "show-settings-phone": true,
+                "callTrackingSubscriptionStatExcel": true,
+                "separateGoalsForMarketplaces": true,
+                "adRecommendationBadges": true,
+                "priorityHandleCompanyModerationStatus": true,
+                "navigationToSpravFromCompanySidebar": true,
+                "tmpCrmPhotoPicker": true,
+                "crmRequestPermissions": true,
+                "tmpReplacementNumberReissueNonChain": true,
+                "show-custom-cta-button-in-landing": true,
+                "telegramStatisticCredentials": true,
+                "callTracking": true,
+                "multiSubscriptionChangeUrl": true,
+                "nonAuthorizedAdvertizeOnLanding": true,
+                "chainSubscription": true,
+                "headerUserIdPopup": true,
+                "show-request-created-checkbox": true,
+                "tycoonHeadless": true,
+                "telegramPreselectV2": true,
+                "useIframeSpravLinkInWidget": true,
+                "showOnboardingPrices": true,
+                "prioritySearch": true,
+                "upsaleWebCampaign": true,
+                "galleryAdvertInSubscription": true,
+                "campaignDisplayArbitrate": true,
+                "dragAndDropForProductList": true,
+                "icoForCustomBudget": true,
+                "isVisiblePlayPauseButton": true,
+                "autoActivate": true,
+                "landlordAttractCustomers": true,
+                "bell": true,
+                "tmpWebmasterWebSubscription": true,
+                "promocodeBPlusNotification": true,
+                "showGoalsStatLanding": true,
+                "usePredictionService": true,
+                "websubscriptionStatisticPage": true,
+                "webSubscriptionMediaPageV2": true,
+                "webSubscriptionMediaPageV3": true,
+                "feedPreviewFromCommonEndpoint": true,
+                "disablePlatforms": true,
+                "tmpInstagramSettingsAddress": true,
+                "instagramNewCompany": true,
+                "checkBalanceAlreadyRequest": true,
+                "tmpEnableSourcesPopup": true,
+                "show-gift-coupons": true,
+                "multipleProductCurrency": true,
+                "headlineMediaArbitrateImage": true,
+                "shortCompanyByPermalink": true,
+                "headersAsRecord": true,
+                "coloredBanners": true,
+                "uxFeedback": true,
+                "dndImageUploaderPlate": true,
+                "defaultDaysDuration": true,
+                "newCompetitorsNotificationPoster": true,
+                "stopUsingPrivateTycoonApiCreateUser": true,
+                "tmpCacheCreateCampaign": true,
+                "tmpAuctionUpsaleCompensation": true,
+                "show-services-request-cta": true,
+                "importBlockForArbitrageProduct": true,
+                "productsWebSubscription": true,
+                "allowCreateLandingByUrl": true,
+                "textImageAds": true,
+                "multiSourceImageSelect": true,
+                "instagramSettingsHeaderCTAButton": true,
+                "webSubscriptionHistory": true,
+                "adWhatsAppInChatWidget": true,
+                "redirectToSpravVerify": true,
+                "tmpChainMultistageBoost": true,
+                "createCompany": true,
+                "displayPriceFixedUntil": true,
+                "presetExternalAdverts": true,
+                "tmpAsyncCopyAdvertFromCampaignToCampaign": true,
+                "branchesHasCampaignFilterInCampaign": true,
+                "launchInstaStatistic": true,
+                "totalBusinessSnapshotStat": true,
+                "hideStatisticCompetitors": true,
+                "dashBackSignTicket": true,
+                "spravDeliveryEcom": true,
+                "handleCompanyCreatorVerification": true,
+                "upsaleBudgetQuery": true,
+                "tmpBeneficiaryBackendValidation": true,
+                "onlyDiscoveryDeepClicksForSubscription": true,
+                "subscriptionCampaign": true,
+                "crmSubscriptionButton": true,
+                "tmpOneSimpleAmPreview": true,
+                "companiesUsersTab": true,
+                "okrForOwnAdverts": true,
+                "handleNotOwned": true,
+                "tmpUnifiedCallTracking": true,
+                "tmpValidateProductLinkForWeb": true,
+                "hideAdverizeWithActiveGeoproductOrders": true,
+                "galleryImageUploader": true,
+                "landingEcommerce": true,
+                "landingGeoproduct": true,
+                "acClientDomain": true,
+                "tmpExtendedBeneficiaryForm": true,
+                "beneficiaryOnPayersPage": true,
+                "dashCollapseRoles": true,
+                "tmpDisplayActualSlugForLandings": true,
+                "showLandingPreviewSubscription": true,
+                "requestsTab": true,
+                "saveCampaignV2": true,
+                "presaleSidebar": true,
+                "mergeFeedsWithArbitrageProducts": true,
+                "partnerWidgetBoostLanding": true,
+                "tmpSerpAuctionWithChains": true,
+                "statisticGetQueries": true,
+                "tmpImagedOwnAdvertMlGeneration": true,
+                "arbitrateMediaPreviewLikeDislike": true,
+                "promoRedesignNewCampaigns": true,
+                "fancyBudgetControlShiftBreakpoints": true,
+                "findBusinessSnapshotAmongChains": true,
+                "uxFeedbackSprav": true,
+                "tmpWaitLongVisibilityBeforeRequestFeedback": true,
+                "listViewAutoGoals": true,
+                "instaSiteGdu": true,
+                "onlineCompanies": true,
+                "supportPhone": true,
+                "moveCompaniesPermalinks": true,
+                "promocodeGoodPlaceNotification": true,
+                "tmpEnforceCSP": true,
+                "tmpExtendedBeneficiaryDraft": true,
+                "hideStatWithoutLabel": true,
+                "conversionToSubscription": true,
+                "calculateCompanyHasAccessToAdv": true,
+                "notBoundedPrice": true,
+                "showServicesSectionInConstructor": true,
+                "campaignBranchesSelectV2Available": true,
+                "showStatusDescriptionTooltip": true,
+                "partnerWidget": true,
+                "tmpAuctionRecalculate": true,
+                "websubscriptionMultipleCounters": true,
+                "hideUxFeedbackInFrame": true,
+                "createFeedForSubscription": true,
+                "advertBranchesSelectV2Available": true,
+                "partnerWidgetFooter": true,
+                "stopUsingPrivateTycoonApiUpdateCompany": true,
+                "upsaleForDaysHint": true,
+                "permalinksMode": true,
+                "chainStatCollection": true,
+                "prolongationNewUI": true,
+                "promocodeGreenNotification": true,
+                "showSubscriptionMainStatistic": true,
+                "companiesRequests": true,
+                "instagramSettingsTabView": true,
+                "showSitePreviewSubscription": true,
+                "newWidgetMigration": true,
+                "showPlatformsBlock": true,
+                "webSubscriptionSettings": true,
+                "tmpPresaleChainFetchingActiveCampaignIgnore": true,
+                "totalDeepUsesStat": true,
+                "tmpNewAdvertPlatforms": true,
+                "statAdvert": true,
+                "useGoodApiForPromoutedServices": true,
+                "tmpPartnerPromoDistributionId": true,
+                "clientPhoneSettings": true,
+                "tmpPayerRuNewInnRequired": true,
+                "allowDirectProductChoice": true,
+                "ydoCampaign": true,
+                "forecastCtaForInsta": true,
+                "tmpInstagramNewPost": true,
+                "tmpFixPriceWebSubscription": true,
+                "VkontakteTargetingSettings": true,
+                "hideInstagramSupportChartAndPhone": true,
+                "compactCampaignControls": true,
+                "tmpInstagramPostsPage": true,
+                "forbidIntegrationCreation": true,
+                "multiSubscription": true,
+                "settingsStandaloneApp": true,
+                "campaignDisplayBudget": true,
+                "subscriptionTelegramPostPage": true,
+                "multiSubscriptionCTA": true,
+                "instagramCTATabView": true,
+                "tmpWebCampaignCompanyOwnership": true,
+                "newCategoriesInput": true,
+                "checkLandingCampaignForCrm": true,
+                "showCompaniesApp": true,
+                "tmpLandingsLinkNewCompany": true,
+                "boostCompanyPreferredProduct": true,
+                "newFetchOrGenerateLanding": true,
+                "ignoreHideBoostPriority": true,
+                "tmpIntegrationSettingActionMenu": true,
+                "enableWebExportToMaps": true,
+                "sortedWebsubscriptionGoalsStat": true,
+                "campaignCompetitorsSurvey": true,
+                "CompetitorsPage": true,
+                "shortPathCreateSiteSubscription": true,
+                "vkAndTelegramPreviewFromCommonEndpoint": true,
+                "payerFormV2": true,
+                "tmpAuctionUpsaleDaysCharge": true,
+                "newBannersInLK": true,
+                "websubscriptionStatisticArbitrateChart": true,
+                "tmpGetLastFeatureSubmission": true,
+                "companiesFeatures": true,
+                "mapsOnlyPlatform": true,
+                "cropAdvertPhoto": true,
+                "textImageAdsPreview": true,
+                "lastStableDate": true,
+                "tmpIntegrationPermalinkBind": true,
+                "tmpShowTotalItemsCountInFeedPreview": true,
+                "subscriptionVkType": true,
+                "ozonStatisticCredentials": true,
+                "scrollablePlatformPreviewGallery": true,
+                "tmpPresaleIcoMultiTab": true,
+                "competitorsTabInWidget": true,
+                "urlValidationInput": true,
+                "supportChat": true,
+                "companiesDisplayCompanyModerationStatus": true,
+                "hideStatWithoutGrants": true,
+                "enabledMapsPlatformFeedback": true,
+                "tmpShowDynamicInCharts": true,
+                "openApiCheckBeneficiaryOnLaunch": true,
+                "tmpOpenApiBeneficiaryBackendValidation": true,
+                "tmpJingleForCaller": true,
+                "imageUploadComponentV2": true,
+                "advertizeOnLanding": true,
+                "adUpsaleOfferNewUI": true,
+                "allowCompanySelect": true,
+                "tmpWebCampaignMediaModeration": true,
+                "tycoonBookingStat": true,
+                "openApiWebSubscription": true,
+                "tmpKzPlatformInstagram": true,
+                "wildWebFeed": true,
+                "allowTextGenerator": true,
+                "payersListDisplayType": true,
+                "serpAuctionOnlyStatHotfix": true,
+                "internalInvoice": true,
+                "tmpGetCampaignWithoutAdverts": true,
+                "modalOwnershipConfirmation": true,
+                "tmpFixateProlongation": true,
+                "webSubscriptionBusinessSnapshotDigestPage": true,
+                "companiesBookingTab": true,
+                "tmpCreateCompanyWithoutWebsite": true,
+                "aggregatedClicks": true,
+                "quickPayment": true,
+                "subscriptionVkWithMaps": true,
+                "goalsNothingToShowWithHelpForm": true,
+                "advertCtaRequestOption": true,
+                "displayAdditionalBudget": true,
+                "featureRequestLamp": true,
+                "companyMapsPreviewImage": true,
+                "upsaleActualPredictionInPaymentLink": true,
+                "companyNavNewVerificationCheck": true,
+                "tmpExtendedBeneficiaryDescription": true,
+                "priorityBusinessFeatures": true,
+                "tmpWebWithMapStat": true,
+                "innerLogoHeadlineByDefault": true,
+                "multistageBoost": true,
+                "useSuggestForTheOzon": true,
+                "statisticArbitrateChart": true,
+                "budgetCalculation": true,
+                "promotionMediaArbitrateImage": true,
+                "campaignFinishDate": true,
+                "tmpUpsaleOfferWithBuff": true,
+                "sidebarServerComponent": true,
+                "TelegramPostAutoParser": true,
+                "callTrackingStat": true,
+                "convertSubsidy": true,
+                "footerInfoLinks": true,
+                "spravLoadableSidebar": true,
+                "arbitrateMediaPreview": true,
+                "tgPercentBonusPromocodePoster": true,
+                "webSubscriptionMediaExamplesForInsta": true,
+                "openNewMasterForTelegram": true,
+                "recalculateGduCountAndPrice": true,
+                "tmpInstagramAccountCreateCampaign": true,
+                "adLogoRKList": true,
+                "VkEditLandingTab": true,
+                "subscriptionCampaignPageTabs": true,
+                "subscriptionTelegramPostsPage": true,
+                "webCampaignTuningPage": true,
+                "showManagerCard": true,
+                "companySidebarTouch": true,
+                "onlineCampaigns": true,
+                "tmpPresalePageRefactoring": true,
+                "allowCompaniesPhotosPage": true,
+                "promocodeNotificationMessage": true,
+                "partnerWidgetLanding": true,
+                "tmpBoostUrlLengthChecking": true,
+                "hybridBudgetMultiChainFix": true,
+                "telegramCampaignTopPosts": true,
+                "createWebCampaignV2": true,
+                "companiesSiteTab": true,
+                "competitorsOwnCompanyHasActiveCampaigns": true,
+                "tmpUnifiedKzChain": true,
+                "dashShowActualizationStatus": true,
+                "multisubStatMapCorrection": true,
+                "tmpUseBudgetByInitialAmountUpsale": true,
+                "TelegramTargetingSettings": true,
+                "lastProcessedDate": true,
+                "asyncPreviewForAdditionalAc": true,
+                "hideProlongPoster": true,
+                "pauseRunAdvert": true,
+                "eventSummaryStatOnKinds": true,
+                "priorityCampaignCreation": true,
+                "tmpCampaignBranchesRefactoring": true,
+                "partnerWidgetMultistageBoost": true,
+                "tmpAsyncPreview": true,
+                "auctionUpsale": true,
+                "landlordMessengers": true,
+                "newStatisticDownload": true,
+                "readAdvertisingTemplates": true,
+                "ownAdvertsForLanding": true,
+                "subscriptionOzonType": true,
+                "sberPayNewWindow": true,
+                "totalStatisticMultipleCounters": true,
+                "promocode": true,
+                "tmpSerpAuctionPlatformPriority": true,
+                "tmpStrictMediaLaw": true,
+                "nonStaffCampaignCreation": true,
+                "companiesReviews": true,
+                "boostAppRedirects": true,
+                "ICOWebSubscription": true,
+                "newBrandingICPGenerator": true,
+                "beneficiaryRkBannerAndSettings": true,
+                "supportPartnerFeedLink": true,
+                "partnerUsers": true,
+                "customBudgetControl": true,
+                "tmpCampaignStatusFromBackend": true,
+                "getImageInfoAvatars": true,
+                "newTransitionToTheAdvertProductListPage": true,
+                "googleDisabledDisclaimer": true,
+                "organizationFeaturesSurvey": true,
+                "mapsOnlyForWebOnNewCampaign": true,
+                "show-orders-history": true,
+                "adPriorityOfferUpsale": true,
+                "dynPrice": true,
+                "promocodeExperimentPoster": true,
+                "deepClicks": true,
+                "subsidyPayerAlarm": true,
+                "discountAdvertCreation": true,
+                "allowCreateCompanyForLanding": true,
+                "campaignEndpointDiagram": true,
+                "callTrackingStatExcel": true,
+                "newCtaMechanicsUiForCrm": true,
+                "presaleBranchesSelectV2": true,
+                "paymentMethods": true,
+                "asyncProductFeedSiteAction": true,
+                "newDraftLogicForOzon": true,
+                "tmpMultiOfferOpenApi": true,
+                "tmpSubscriptionShowGoodsFeedInDraft": true,
+                "feedMediaPreview": true,
+                "hasLandingCalltracking": true,
+                "tmpRealBannersInPreviewV2": true,
+                "tmpRejectedMediaInDegradationCaseFix": true,
+                "statActionsInCard": true,
+                "upsale": true,
+                "separatePaymentMethods": true,
+                "tmpCreateCompanyForMulti": true,
+                "tmpShowAdUsefullCasesInputInSurveys": true,
+                "webPromotionMoveMapsTab": true,
+                "acPartnership": true,
+                "presaleCampaignCreation": true,
+                "userCardSimpleDropdownInWidget": true,
+                "websubscriptionQuickPayment": true,
+                "tmpIsCompetitorsPageNew": true,
+                "handleCurrencyMismatch": true,
+                "subscriptionFor30Days": true,
+                "dashCreateCleanTickets": true,
+                "boostUnifiedChainWithOldSubscription": true,
+                "recurringPaymentWriteOff": true,
+                "companiesSettingsTab": true,
+                "showBookMapsCtaButtonInLanding": true,
+                "instagramPostsEdit": true,
+                "showBreadcrumbsForAdvertList": true,
+                "arbitrateRate": true,
+                "directModeration": true,
+                "validateBeneficiaryOnSave": true,
+                "webSubscriptionCallDurationTracking": true,
+                "showOrganizationSettingsCard": true,
+                "tmpExtendedBeneficiarySettings": true,
+                "upsaleStraightUrl": true,
+                "platformsCountryUnavailable": true,
+                "show-services-multi-edit": true,
+                "tmpPreviewBeforePurchase": true,
+                "showInstagramFacebookStatChart": true,
+                "websubscriptionAllowRenewal": true,
+                "hideIntegrationsIfNoAccounts": true,
+                "priorityCampaignPlatforms": true,
+                "upsaleOffer": true,
+                "adFeatureImagesAndCampaignGallery": true,
+                "tmpYmlWebSubscription": true,
+                "boostInstagram": true,
+                "customPriceOnPresale": true,
+                "subscriptionPreviewCountLimit": true,
+                "partnerAttachPromoSettings": true,
+                "tmpAuctionUpsaleForGeoChains": true,
+                "showNewBoostInFrame": true,
+                "forceOnMultiExp": true,
+                "clientEmailSettings": true,
+                "tmpPaymentModeMapsOnly": true,
+                "changeWebUrlFull": true,
+                "adFixAverageCallDuration": true,
+                "tmpSplit": true,
+                "tmpShowPostsInDraft": true,
+                "subscriptionCTAPage": true,
+                "tmpDirectAllowUseGoalsWithoutAccessGrants": true,
+                "tmpICOMultiV2": true,
+                "showRequestCtaButtonInLanding": true,
+                "audienceServicesChart": true,
+                "allowCompaniesEdit": true,
+                "redirectToKzWithTenge": true,
+                "previewAdvertTextFromUserInput": true,
+                "recalculateV2": true,
+                "multistageBoostOpenGoalFromWidget": true,
+                "redirectToDraftAfterCompanyCreation": true,
+                "hideRubricsForFeedDraft": true,
+                "ndaStatisticForLast30Days": true,
+                "unifiedCampaignTarget": true,
+                "innerLogoHeadline": true,
+                "tmpQuickPaymentForKzt": true,
+                "tmpShowSiteStatForSerpAuction": true,
+                "allowStatistic": true,
+                "salesPhoneOnLanding": true,
+                "disableSubsidyClaimFields": true,
+                "subscriptionWildberriesType": true,
+                "endpointMultilinks": true,
+                "companiesCouponsTab": true,
+                "recurringPayment": true
+            },
+            "abTestGroups": {
+                "adWhatsAppInChatWidget": "ON",
+                "showAdUsefullCasesInputOnBoost": "OFF",
+                "adRecommendationBadges": "ON",
+                "upsaleNewStyle": "ON",
+                "VkWithMaps": "ON",
+                "partnerWidgetNewDesignLandings": "ON",
+                "unauthSetupPage": "OFF",
+                "subscriptionMainPageStubMapAuth": "OFF",
+                "allowDirectProductChoice": "OFF",
+                "companyBlueprintLandingExp": "OFF",
+                "unifiedChain": "ON",
+                "companyCompetitors": "NEW",
+                "statistic": "NEW",
+                "boostSwitch": "CONTROL",
+                "multiSubscription": "ON",
+                "externalAdSitePreviews": "HIDE_SITE_PREVIEWS",
+                "onboardingShowPrices": "SHOW_DAYS",
+                "boostFirstCard": "SUBSCRIPTION",
+                "crystalsInTotalStat": "NO_CRYSTALS",
+                "budgetDescriptions": "NEW",
+                "convenienceSurvey": "DEFAULT_2",
+                "subscriptionCampaignPageTabs": "ON",
+                "managerCard": "HIDE",
+                "permalinkTest": "OFF",
+                "pessimisticPrediction": "ON"
+            },
+            "systemRole": "client",
+            "userSegmentation": {
+                "balance_client_id": 304883123,
+                "has_chain_access": false,
+                "has_permalink_access": true,
+                "for_direct_popup": false,
+                "customer_type": "free"
+            },
+            "expBoxes": [
+                "1111484,0,62"
+            ],
+            "expBoxesCrypted": "1wDmC4m_zNVpFoO-OfPShA,,",
+            "uatraits": {
+                "BrowserBase": "Chromium",
+                "BrowserBaseVersion": "131.0.0.0",
+                "BrowserEngine": "WebKit",
+                "BrowserEngineVersion": "537.36",
+                "BrowserName": "Chrome",
+                "BrowserVersion": "131.0.0.0",
+                "CSP1Support": true,
+                "CSP2Support": true,
+                "OSFamily": "MacOS",
+                "OSName": "macOS Catalina",
+                "OSVersion": "10.15.7",
+                "SVGSupport": true,
+                "SameSiteSupport": true,
+                "WebPSupport": true,
+                "historySupport": true,
+                "isBrowser": true,
+                "isMobile": false,
+                "isTouch": false,
+                "localStorageSupport": true,
+                "postMessageSupport": true,
+                "isTurboApp": false,
+                "isSearchApp": false,
+                "isYandexBrowser": false,
+                "yaPlatform": "desktop"
+            },
+            "geo": {
+                "region_id": 14,
+                "position": [
+                    56.858745,
+                    35.917421
+                ],
+                "coordinates": [
+                    56.858745,
+                    35.917421
+                ],
+                "parents": [
+                    14,
+                    120922,
+                    10819,
+                    3,
+                    225,
+                    10001,
+                    10000
+                ],
+                "region": {
+                    "id": 14,
+                    "type": 6,
+                    "parent_id": 120922,
+                    "geo_parent_id": 0,
+                    "capital_id": 0,
+                    "name": "Тверь",
+                    "native_name": "",
+                    "iso_name": "RU TVR",
+                    "is_main": true,
+                    "en_name": "Tver",
+                    "short_en_name": "TVR",
+                    "phone_code": "4822",
+                    "zip_code": "",
+                    "position": 0,
+                    "population": 420065,
+                    "synonyms": "Tver'",
+                    "latitude": 56.858745,
+                    "longitude": 35.917421,
+                    "latitude_size": 0.152804,
+                    "latitiude_size": 0.152804,
+                    "longitude_size": 0.339025,
+                    "zoom": 12,
+                    "tzname": "Europe\u002FMoscow",
+                    "official_languages": "ru",
+                    "widespread_languages": "ru",
+                    "services": [
+                        "bs",
+                        "yaca",
+                        "weather",
+                        "afisha",
+                        "maps",
+                        "tv",
+                        "ad",
+                        "etrain",
+                        "delivery",
+                        "route"
+                    ]
+                }
+            },
+            "isInternalRequest": false,
+            "diffs": {
+                "companies_with_changes_count": 0
+            },
+            "gpUserType": "user"
+        },
+        "env": {
+            "enviroment": "production",
+            "query": {},
+            "metrika": {
+                "id": 39321485,
+                "errorId": "45129582",
+                "geoadvId": 46231566,
+                "smb": 56213845
+            },
+            "delivery": {
+                "platform_station": "741fb948-bf3e-4878-8bfa-263dfb300b10"
+            },
+            "hosts": {
+                "yaRu": "https:\u002F\u002Fya.ru",
+                "businessPriority": "\u002Fbusiness\u002Fpriority",
+                "forms": "https:\u002F\u002Fforms.yandex.ru",
+                "formsCom": "https:\u002F\u002Fforms.yandex.com",
+                "help": "https:\u002F\u002Fyandex.ru\u002Fsupport\u002Fbusiness-priority",
+                "promo": "https:\u002F\u002Fyandex.ru\u002Fpromo",
+                "webmaster": "https:\u002F\u002Fwebmaster.yandex.ru",
+                "goodPlaceLanding": "https:\u002F\u002Fyandex.ru\u002Fproject\u002Fmaps\u002Fgoodplace",
+                "uxFeedbackFrameSrc": "https:\u002F\u002Fpriority.s3.yandex.net\u002Fux-feedback.html",
+                "yangoUserAgreementLink": "https:\u002F\u002Fyango.com\u002Flegal\u002Fyangomaps_termsofuse",
+                "yangoPrivacyPolicyLink": "https:\u002F\u002Fyango.com\u002Flegal\u002Fyangomaps_privacy",
+                "yangoBusinessHelp": "https:\u002F\u002Fbusiness.yango.com\u002Fsupport",
+                "userAgreementLink": "https:\u002F\u002Fyandex.ru\u002Flegal\u002Frules",
+                "privacyPolicyLink": "https:\u002F\u002Fyandex.ru\u002Flegal\u002Fconfidential",
+                "yandex": "yandex.ru",
+                "yandexRu": "yandex.ru",
+                "altay": "https:\u002F\u002Faltay.maps.yandex-team.ru",
+                "direct": "https:\u002F\u002Fdirect.yandex.ru\u002F",
+                "photoUploadApi": "https:\u002F\u002Fphoto.upload.maps.yandex.ru\u002Fapi\u002Fv1",
+                "yangoPhotoUploadApi": "https:\u002F\u002Fphoto-upload.maps.yango.com\u002Fapi\u002Fv1",
+                "yango": "https:\u002F\u002Fyango.com",
+                "yangoPassport": "https:\u002F\u002Fpassport.yango.com",
+                "yangoBusiness": "https:\u002F\u002Fbusiness.yango.com",
+                "yangoMaps": "https:\u002F\u002Fmaps.yango.com",
+                "avatarsGet": "https:\u002F\u002Favatars.mds.yandex.net"
+            },
+            "host": "yandex.ru",
+            "routePrefix": "\u002Fsprav",
+            "csrf": "2080d3bcac0a615b4b93828c3d0da23956d8d495:1734378584",
+            "tld": {
+                "value": "ru",
+                "isKubr": true,
+                "hasPayments": true
+            },
+            "nonce": "jrDToO6I1Dq6GZ6Fzh5\u002FsA==",
+            "path": "\u002F43297404\u002Fedit\u002Fposts",
+            "isTestplane": false,
+            "useStub": false,
+            "platform": "desktop",
+            "icookie": "5922328191691828084",
+            "langDetect": {
+                "id": "ru",
+                "name": "Ru"
+            },
+            "version": "822",
+            "yandexEnvironment": "production",
+            "isYangoTouchPage": false,
+            "isGoIframe": false,
+            "isYaRu": false
+        },
+        "edit": {
+            "navigation": {
+                "currentPage": "posts",
+                "company": {
+                    "id": 195980028998,
+                    "tycoon_id": 43297404,
+                    "permanent_id": 195980028998,
+                    "type": "ordinal",
+                    "publishing_status": "publish",
+                    "work_intervals": [
+                        {
+                            "day": "everyday",
+                            "time_minutes_begin": 540,
+                            "time_minutes_end": 1200
+                        }
+                    ],
+                    "scheduled_work_intervals": [],
+                    "base_work_intervals": [
+                        {
+                            "day": "everyday",
+                            "time_minutes_begin": 540,
+                            "time_minutes_end": 1200
+                        }
+                    ],
+                    "address": {
+                        "region_code": "RU",
+                        "geo_id": 14,
+                        "formatted": {
+                            "value": "Центральный федеральный округ, Тверская область, городской округ Тверь, Тверь, бульвар Радищева, 48",
+                            "locale": "ru"
+                        },
+                        "pos": {
+                            "type": "Point",
+                            "coordinates": [
+                                35.913055,
+                                56.856392
+                            ]
+                        },
+                        "bounding_box": [
+                            [
+                                35.90895,
+                                56.854143
+                            ],
+                            [
+                                35.91716,
+                                56.858641
+                            ]
+                        ],
+                        "precision": "exact",
+                        "components": [
+                            {
+                                "kind": "country",
+                                "name": {
+                                    "value": "Россия",
+                                    "locale": "ru"
+                                }
+                            },
+                            {
+                                "kind": "province",
+                                "name": {
+                                    "value": "Центральный федеральный округ",
+                                    "locale": "ru"
+                                }
+                            },
+                            {
+                                "kind": "province",
+                                "name": {
+                                    "value": "Тверская область",
+                                    "locale": "ru"
+                                }
+                            },
+                            {
+                                "kind": "area",
+                                "name": {
+                                    "value": "городской округ Тверь",
+                                    "locale": "ru"
+                                }
+                            },
+                            {
+                                "kind": "locality",
+                                "name": {
+                                    "value": "Тверь",
+                                    "locale": "ru"
+                                }
+                            },
+                            {
+                                "kind": "street",
+                                "name": {
+                                    "value": "бульвар Радищева",
+                                    "locale": "ru"
+                                }
+                            },
+                            {
+                                "kind": "house",
+                                "name": {
+                                    "value": "48",
+                                    "locale": "ru"
+                                }
+                            }
+                        ],
+                        "postal_code": "170100",
+                        "is_auto": false,
+                        "infos": [
+                            {
+                                "value": "радищева 48",
+                                "locale": "ru"
+                            }
+                        ],
+                        "translations": [
+                            {
+                                "formatted": {
+                                    "value": "Tver, Radischeva Boulevard, 48",
+                                    "locale": "en"
+                                },
+                                "components": [
+                                    {
+                                        "kind": "country",
+                                        "name": {
+                                            "value": "Russian Federation",
+                                            "locale": "en"
+                                        }
+                                    },
+                                    {
+                                        "kind": "province",
+                                        "name": {
+                                            "value": "Tsentralny federalny okrug",
+                                            "locale": "en"
+                                        }
+                                    },
+                                    {
+                                        "kind": "province",
+                                        "name": {
+                                            "value": "Tver Region",
+                                            "locale": "en"
+                                        }
+                                    },
+                                    {
+                                        "kind": "area",
+                                        "name": {
+                                            "value": "gorodskoy okrug Tver",
+                                            "locale": "en"
+                                        }
+                                    },
+                                    {
+                                        "kind": "locality",
+                                        "name": {
+                                            "value": "Tver",
+                                            "locale": "en"
+                                        }
+                                    },
+                                    {
+                                        "kind": "street",
+                                        "name": {
+                                            "value": "Radischeva Boulevard",
+                                            "locale": "en"
+                                        }
+                                    },
+                                    {
+                                        "kind": "house",
+                                        "name": {
+                                            "value": "48",
+                                            "locale": "en"
+                                        }
+                                    }
+                                ],
+                                "is_manual": false
+                            }
+                        ],
+                        "address_id": 57670625,
+                        "translocal": "Центральный федеральный округ, Тверская область, городской округ Тверь, Тверь, бульвар Радищева, 48",
+                        "is_manual_one_line": false,
+                        "country_geo_id": 225
+                    },
+                    "names": [
+                        {
+                            "value": {
+                                "value": "Бытсервис",
+                                "locale": "ru"
+                            },
+                            "type": "main"
+                        },
+                        {
+                            "value": {
+                                "value": "Rbt. Net.ru",
+                                "locale": "en"
+                            },
+                            "type": "main"
+                        },
+                        {
+                            "value": {
+                                "value": "Бытсервис",
+                                "locale": "ru"
+                            },
+                            "type": "short"
+                        }
+                    ],
+                    "displayName": "Бытсервис",
+                    "emails": [
+                        "bservis70@yandex.ru"
+                    ],
+                    "phones": [
+                        {
+                            "country_code": "7",
+                            "region_code": "993",
+                            "number": "5504483",
+                            "type": "phone",
+                            "infos": [
+                                {
+                                    "value": "Сервисный центр",
+                                    "locale": "ru"
+                                }
+                            ],
+                            "hide": false,
+                            "rank": 1,
+                            "formatted": "+7 (993) 550-44-83"
+                        }
+                    ],
+                    "urls": [
+                        {
+                            "hide": false,
+                            "type": "main",
+                            "value": "http:\u002F\u002Frbt.net.ru\u002F"
+                        },
+                        {
+                            "hide": false,
+                            "type": "social",
+                            "value": "https:\u002F\u002Ft.me\u002FTexServisTver",
+                            "social_network": "telegram",
+                            "social_login": "TexServisTver"
+                        },
+                        {
+                            "hide": false,
+                            "type": "social",
+                            "value": "https:\u002F\u002Fwa.me\u002F+79935504483",
+                            "social_network": "whatsapp",
+                            "social_login": "+79935504483"
+                        }
+                    ],
+                    "rubrics": [],
+                    "feature_values": [],
+                    "noAccess": false,
+                    "photos": [],
+                    "owner": 2016744911,
+                    "object_role": "owner",
+                    "price_lists": [],
+                    "legal_info": {
+                        "name": "Бенберин Антон ",
+                        "type": "self_employed"
+                    },
+                    "owner_verification": {
+                        "verification_ts": 1733035154000
+                    },
+                    "is_top_rated": false,
+                    "has_owner": true,
+                    "has_active_feedback_request": false,
+                    "all_feedback_rejected": false,
+                    "is_online": false,
+                    "service_area": {},
+                    "logo": {
+                        "id": "2a000001917eb93343d339f4a37c5b4dcd22",
+                        "tags": [
+                            "logo"
+                        ],
+                        "moderation": {},
+                        "url_template": "https:\u002F\u002Favatars.mds.yandex.net\u002Fget-altay\u002F10247515\u002F2a000001917eb93343d339f4a37c5b4dcd22\u002F%s"
+                    },
+                    "service_profiles": [
+                        {
+                            "type": "maps",
+                            "external_path": "\u002Fmaps\u002Forg\u002F195980028998",
+                            "published": true
+                        },
+                        {
+                            "type": "serp",
+                            "external_path": "\u002Fsearch?text=%D0%91%D1%8B%D1%82%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81&oid=b%3A195980028998",
+                            "published": true
+                        },
+                        {
+                            "type": "ydo",
+                            "external_path": "\u002Fuslugi\u002Fprofile\u002FBytservis-2893576",
+                            "published": true
+                        }
+                    ],
+                    "profile": {},
+                    "nail": {
+                        "isNailed": false
+                    },
+                    "popups": [
+                        {
+                            "type": "payment_popup_v1_40731005",
+                            "state": {
+                                "last_shown": 1725538750699
+                            }
+                        },
+                        {
+                            "type": "payment_popup_v1_49495568",
+                            "state": {
+                                "last_shown": 1733302215754
+                            }
+                        },
+                        {
+                            "type": "VIDEO_BANNER_ON_MAIN",
+                            "state": {
+                                "last_shown": 1733049422773
+                            }
+                        },
+                        {
+                            "type": "payment_popup_v1_40731575",
+                            "state": {
+                                "last_shown": 1733044422734,
+                                "last_denied": 1731775483667
+                            }
+                        },
+                        {
+                            "type": "payment_popup_v1_49527060",
+                            "state": {
+                                "last_shown": 1734373651728,
+                                "last_denied": 1734032694800
+                            }
+                        },
+                        {
+                            "type": "ReviewsPageDraftGeoAdvBanner",
+                            "state": {
+                                "last_shown": 1733569596107
+                            }
+                        }
+                    ],
+                    "panorama": {
+                        "id": "1287971534_661390053_23_1697359930",
+                        "direction": {
+                            "bearing": 209.60000000000008,
+                            "pitch": 7.9163521739130465
+                        },
+                        "span": {
+                            "horizontal": 92.73298709601221,
+                            "vertical": 80
+                        },
+                        "pos": {
+                            "type": "Point",
+                            "coordinates": [
+                                35.9130538969,
+                                56.85658254109712
+                            ]
+                        },
+                        "provider_id": 991333633
+                    },
+                    "fromGeosearch": true,
+                    "need_actualization": false,
+                    "moderationStatus": "APPROVED",
+                    "geospam": {
+                        "state": "GCS_PROCESSED_OFFLINE",
+                        "timestamp": 1733111142,
+                        "user_response_deadline": 1725617644,
+                        "request_context": "GRC_COMPANY_CREATION"
+                    },
+                    "rating": 4.3
+                },
+                "tdsCompany": {
+                    "id": 195980028998,
+                    "permanent_id": 195980028998,
+                    "owner": 2016744911,
+                    "publishing_status": "publish",
+                    "address": {
+                        "region_code": "RU",
+                        "geo_id": 14,
+                        "formatted": {
+                            "value": "Центральный федеральный округ, Тверская область, городской округ Тверь, Тверь, бульвар Радищева, 48",
+                            "locale": "ru"
+                        },
+                        "pos": {
+                            "type": "Point",
+                            "coordinates": [
+                                35.913055,
+                                56.856392
+                            ]
+                        },
+                        "bounding_box": [
+                            [
+                                35.90895,
+                                56.854143
+                            ],
+                            [
+                                35.91716,
+                                56.858641
+                            ]
+                        ],
+                        "precision": "exact",
+                        "components": [
+                            {
+                                "kind": "country",
+                                "name": {
+                                    "value": "Россия",
+                                    "locale": "ru"
+                                }
+                            },
+                            {
+                                "kind": "province",
+                                "name": {
+                                    "value": "Центральный федеральный округ",
+                                    "locale": "ru"
+                                }
+                            },
+                            {
+                                "kind": "province",
+                                "name": {
+                                    "value": "Тверская область",
+                                    "locale": "ru"
+                                }
+                            },
+                            {
+                                "kind": "area",
+                                "name": {
+                                    "value": "городской округ Тверь",
+                                    "locale": "ru"
+                                }
+                            },
+                            {
+                                "kind": "locality",
+                                "name": {
+                                    "value": "Тверь",
+                                    "locale": "ru"
+                                }
+                            },
+                            {
+                                "kind": "street",
+                                "name": {
+                                    "value": "бульвар Радищева",
+                                    "locale": "ru"
+                                }
+                            },
+                            {
+                                "kind": "house",
+                                "name": {
+                                    "value": "48",
+                                    "locale": "ru"
+                                }
+                            }
+                        ],
+                        "postal_code": "170100",
+                        "is_auto": false,
+                        "infos": [
+                            {
+                                "value": "радищева 48",
+                                "locale": "ru"
+                            }
+                        ],
+                        "translations": [
+                            {
+                                "formatted": {
+                                    "value": "Tver, Radischeva Boulevard, 48",
+                                    "locale": "en"
+                                },
+                                "components": [
+                                    {
+                                        "kind": "country",
+                                        "name": {
+                                            "value": "Russian Federation",
+                                            "locale": "en"
+                                        }
+                                    },
+                                    {
+                                        "kind": "province",
+                                        "name": {
+                                            "value": "Tsentralny federalny okrug",
+                                            "locale": "en"
+                                        }
+                                    },
+                                    {
+                                        "kind": "province",
+                                        "name": {
+                                            "value": "Tver Region",
+                                            "locale": "en"
+                                        }
+                                    },
+                                    {
+                                        "kind": "area",
+                                        "name": {
+                                            "value": "gorodskoy okrug Tver",
+                                            "locale": "en"
+                                        }
+                                    },
+                                    {
+                                        "kind": "locality",
+                                        "name": {
+                                            "value": "Tver",
+                                            "locale": "en"
+                                        }
+                                    },
+                                    {
+                                        "kind": "street",
+                                        "name": {
+                                            "value": "Radischeva Boulevard",
+                                            "locale": "en"
+                                        }
+                                    },
+                                    {
+                                        "kind": "house",
+                                        "name": {
+                                            "value": "48",
+                                            "locale": "en"
+                                        }
+                                    }
+                                ],
+                                "is_manual": false
+                            }
+                        ],
+                        "address_id": 57670625,
+                        "translocal": "Центральный федеральный округ, Тверская область, городской округ Тверь, Тверь, бульвар Радищева, 48",
+                        "is_manual_one_line": false,
+                        "country_geo_id": 225
+                    },
+                    "work_intervals": [
+                        {
+                            "day": "everyday",
+                            "time_minutes_begin": 540,
+                            "time_minutes_end": 1200
+                        }
+                    ],
+                    "names": [
+                        {
+                            "value": {
+                                "value": "Бытсервис",
+                                "locale": "ru"
+                            },
+                            "type": "main"
+                        },
+                        {
+                            "value": {
+                                "value": "Rbt. Net.ru",
+                                "locale": "en"
+                            },
+                            "type": "main"
+                        },
+                        {
+                            "value": {
+                                "value": "Бытсервис",
+                                "locale": "ru"
+                            },
+                            "type": "short"
+                        }
+                    ],
+                    "phones": [
+                        {
+                            "country_code": "7",
+                            "region_code": "993",
+                            "number": "5504483",
+                            "type": "phone",
+                            "infos": [
+                                {
+                                    "value": "Сервисный центр",
+                                    "locale": "ru"
+                                }
+                            ],
+                            "hide": false,
+                            "rank": 1,
+                            "formatted": "+7 (993) 550-44-83"
+                        }
+                    ],
+                    "urls": [
+                        {
+                            "type": "main",
+                            "value": "http:\u002F\u002Frbt.net.ru\u002F",
+                            "hide": false
+                        },
+                        {
+                            "type": "social",
+                            "value": "https:\u002F\u002Ft.me\u002FTexServisTver",
+                            "hide": false,
+                            "social_network": "telegram",
+                            "social_login": "TexServisTver"
+                        },
+                        {
+                            "type": "social",
+                            "value": "https:\u002F\u002Fwa.me\u002F+79935504483",
+                            "hide": false,
+                            "social_network": "whatsapp",
+                            "social_login": "+79935504483"
+                        }
+                    ],
+                    "emails": [
+                        {
+                            "value": "bservis70@yandex.ru"
+                        }
+                    ],
+                    "rubrics": [
+                        {
+                            "rubric_id": 31505,
+                            "is_main": true,
+                            "export_to_snippet": false
+                        },
+                        {
+                            "rubric_id": 30233,
+                            "is_main": false,
+                            "export_to_snippet": false
+                        },
+                        {
+                            "rubric_id": 31065,
+                            "is_main": false,
+                            "export_to_snippet": false
+                        }
+                    ],
+                    "feature_values": [
+                        {
+                            "feature_id": 114,
+                            "value": "1"
+                        },
+                        {
+                            "feature_id": 10768,
+                            "value": "1"
+                        },
+                        {
+                            "feature_id": 11741,
+                            "value": "1"
+                        },
+                        {
+                            "feature_id": 12048,
+                            "enum_values": [
+                                11520,
+                                11522,
+                                11525,
+                                11532,
+                                3501945328,
+                                3501945338,
+                                3502236399
+                            ]
+                        },
+                        {
+                            "feature_id": 20407,
+                            "value": "1"
+                        },
+                        {
+                            "feature_id": 20422,
+                            "value": "1"
+                        },
+                        {
+                            "feature_id": 285360299,
+                            "enum_values": [
+                                285360294,
+                                285360295,
+                                285360296,
+                                3501523510,
+                                3501756431,
+                                3501756434,
+                                3501756437,
+                                3501907381,
+                                3502081105,
+                                3502099920,
+                                3502191028,
+                                3502191029,
+                                3502191030
+                            ]
+                        },
+                        {
+                            "feature_id": 3491142672,
+                            "value": "0"
+                        },
+                        {
+                            "feature_id": 3501618484,
+                            "enum_values": [
+                                3501618483
+                            ]
+                        },
+                        {
+                            "feature_id": 3501773764,
+                            "value": "0"
+                        },
+                        {
+                            "feature_id": 3501942075,
+                            "value": "1"
+                        },
+                        {
+                            "feature_id": 3501942428,
+                            "enum_values": [
+                                3501942381,
+                                3501942385
+                            ]
+                        },
+                        {
+                            "feature_id": 3501945049,
+                            "enum_values": [
+                                3501945046
+                            ]
+                        },
+                        {
+                            "feature_id": 3502010918,
+                            "value": "0"
+                        },
+                        {
+                            "feature_id": 3502010929,
+                            "value": "0"
+                        },
+                        {
+                            "feature_id": 3502010932,
+                            "value": "0"
+                        },
+                        {
+                            "feature_id": 3502132404,
+                            "enum_values": [
+                                3502132401
+                            ]
+                        },
+                        {
+                            "feature_id": 3502177438,
+                            "value": "1"
+                        },
+                        {
+                            "feature_id": 3502206928,
+                            "value": "0"
+                        },
+                        {
+                            "feature_id": 3502218166,
+                            "value": "1"
+                        },
+                        {
+                            "feature_id": 3502223901,
+                            "value": "1"
+                        }
+                    ],
+                    "owner_verification": {
+                        "verification_ts": 1733035154000
+                    },
+                    "legal_info": {
+                        "ogrn": "",
+                        "name": {
+                            "value": "Бенберин Антон ",
+                            "locale": "ru"
+                        },
+                        "subject_type": "self_employed"
+                    },
+                    "is_online": false,
+                    "service_profiles": [
+                        {
+                            "type": "maps",
+                            "external_path": "\u002Fmaps\u002Forg\u002F195980028998",
+                            "published": true
+                        },
+                        {
+                            "type": "serp",
+                            "external_path": "\u002Fsearch?text=%D0%91%D1%8B%D1%82%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81&oid=b%3A195980028998",
+                            "published": true
+                        },
+                        {
+                            "type": "ydo",
+                            "external_path": "\u002Fuslugi\u002Fprofile\u002FBytservis-2893576",
+                            "published": true
+                        }
+                    ],
+                    "panorama": {
+                        "id": "1287971534_661390053_23_1697359930",
+                        "direction": {
+                            "bearing": 209.60000000000008,
+                            "pitch": 7.9163521739130465
+                        },
+                        "span": {
+                            "horizontal": 92.73298709601221,
+                            "vertical": 80
+                        },
+                        "pos": {
+                            "type": "Point",
+                            "coordinates": [
+                                35.9130538969,
+                                56.85658254109712
+                            ]
+                        },
+                        "provider_id": 991333633
+                    },
+                    "from_geosearch": true,
+                    "is_exportable": true,
+                    "was_ever_published": true,
+                    "type": "ordinal",
+                    "logo": {
+                        "id": "2a000001917eb93343d339f4a37c5b4dcd22",
+                        "tags": [
+                            "logo"
+                        ],
+                        "url_template": "https:\u002F\u002Favatars.mds.yandex.net\u002Fget-altay\u002F10247515\u002F2a000001917eb93343d339f4a37c5b4dcd22\u002F%s",
+                        "time_published": 0
+                    },
+                    "has_owner": true,
+                    "tycoon_id": 43297404,
+                    "is_top_rated": false,
+                    "popups": [
+                        {
+                            "type": "payment_popup_v1_40731005",
+                            "state": {
+                                "last_shown": 1725538750699
+                            }
+                        },
+                        {
+                            "type": "payment_popup_v1_49495568",
+                            "state": {
+                                "last_shown": 1733302215754
+                            }
+                        },
+                        {
+                            "type": "VIDEO_BANNER_ON_MAIN",
+                            "state": {
+                                "last_shown": 1733049422773
+                            }
+                        },
+                        {
+                            "type": "payment_popup_v1_40731575",
+                            "state": {
+                                "last_shown": 1733044422734,
+                                "last_denied": 1731775483667
+                            }
+                        },
+                        {
+                            "type": "payment_popup_v1_49527060",
+                            "state": {
+                                "last_shown": 1734373651728,
+                                "last_denied": 1734032694800
+                            }
+                        },
+                        {
+                            "type": "ReviewsPageDraftGeoAdvBanner",
+                            "state": {
+                                "last_shown": 1733569596107
+                            }
+                        }
+                    ],
+                    "has_active_feedback_request": false,
+                    "is_nailed": false,
+                    "moderation_status": "APPROVED",
+                    "user_object_role": "owner",
+                    "need_actualization": false
+                },
+                "companyRoles": [
+                    {
+                        "uid": 1776473313,
+                        "role": "delegate",
+                        "category": "company"
+                    },
+                    {
+                        "uid": 2016744911,
+                        "role": "owner",
+                        "category": "company"
+                    }
+                ]
+            },
+            "factors": {
+                "strength": 112,
+                "factors": [
+                    {
+                        "name": "working_intervals",
+                        "active": true,
+                        "strength": 20,
+                        "days_from_update": 13,
+                        "status": "normal",
+                        "actualized_not_processed": false
+                    },
+                    {
+                        "name": "urls",
+                        "active": true,
+                        "strength": 20,
+                        "days_from_update": 13,
+                        "status": "normal",
+                        "actualized_not_processed": false
+                    },
+                    {
+                        "name": "phone",
+                        "active": true,
+                        "strength": 20,
+                        "days_from_update": 13,
+                        "status": "normal",
+                        "actualized_not_processed": false
+                    },
+                    {
+                        "name": "photos",
+                        "active": true,
+                        "strength": 20,
+                        "days_from_update": 6,
+                        "status": "normal",
+                        "actualized_not_processed": false
+                    },
+                    {
+                        "name": "price_lists",
+                        "active": true,
+                        "strength": 20,
+                        "days_from_update": 15,
+                        "status": "normal",
+                        "actualized_not_processed": false
+                    },
+                    {
+                        "name": "logo",
+                        "active": true,
+                        "strength": 3,
+                        "days_from_update": 6,
+                        "status": "normal",
+                        "actualized_not_processed": false
+                    },
+                    {
+                        "name": "features",
+                        "active": true,
+                        "strength": 3,
+                        "days_from_update": 13,
+                        "status": "normal",
+                        "actualized_not_processed": false
+                    },
+                    {
+                        "name": "english_name",
+                        "active": true,
+                        "strength": 3,
+                        "days_from_update": 13,
+                        "status": "normal",
+                        "actualized_not_processed": false
+                    },
+                    {
+                        "name": "messengers",
+                        "active": true,
+                        "strength": 3,
+                        "days_from_update": 13,
+                        "status": "normal",
+                        "actualized_not_processed": false
+                    }
+                ],
+                "to_fill": []
+            },
+            "geoCampaign": {
+                "id": 49527060,
+                "balance_client": {
+                    "currency": "rub"
+                },
+                "status": "WAITING",
+                "type": "WEB"
+            },
+            "campaignPrice": {
+                "currency": "rub",
+                "fixedUntil": "2025-01-03T08:53:29.005+0000",
+                "price": {
+                    "WEB_MINIMAL": {
+                        "durations": {
+                            "90": {
+                                "amount": 13500,
+                                "durationPercentDiscount": "0",
+                                "amountWithoutPromoDiscount": 13500
+                            },
+                            "180": {
+                                "amount": 23625,
+                                "durationPercentDiscount": "12.5",
+                                "amountWithoutPromoDiscount": 23625
+                            },
+                            "360": {
+                                "amount": 40500,
+                                "durationPercentDiscount": "25",
+                                "amountWithoutPromoDiscount": 40500
+                            }
+                        },
+                        "monthPrediction": 300
+                    },
+                    "WEB_MAXIMAL": {
+                        "durations": {
+                            "90": {
+                                "amount": 72900,
+                                "durationPercentDiscount": "0",
+                                "amountWithoutPromoDiscount": 72900
+                            },
+                            "180": {
+                                "amount": 127575,
+                                "durationPercentDiscount": "12.5",
+                                "amountWithoutPromoDiscount": 127575
+                            },
+                            "360": {
+                                "amount": 218700,
+                                "durationPercentDiscount": "25",
+                                "amountWithoutPromoDiscount": 218700
+                            }
+                        },
+                        "monthPrediction": 2200
+                    },
+                    "WEB_OPTIMAL": {
+                        "durations": {
+                            "90": {
+                                "amount": 31500,
+                                "durationPercentDiscount": "0",
+                                "amountWithoutPromoDiscount": 31500
+                            },
+                            "180": {
+                                "amount": 55125,
+                                "durationPercentDiscount": "12.5",
+                                "amountWithoutPromoDiscount": 55125
+                            },
+                            "360": {
+                                "amount": 94500,
+                                "durationPercentDiscount": "25",
+                                "amountWithoutPromoDiscount": 94500
+                            }
+                        },
+                        "monthPrediction": 800
+                    }
+                }
+            },
+            "posts": {
+                "company": {
+                    "name": "Бытсервис",
+                    "logo": "https:\u002F\u002Favatars.mds.yandex.net\u002Fget-altay\u002F10247515\u002F2a000001917eb93343d339f4a37c5b4dcd22\u002FS",
+                    "id": 195980028998,
+                    "permalink": 195980028998
+                },
+                "pager": {
+                    "offset": 0,
+                    "limit": 10,
+                    "total": 3
+                },
+                "items": [
+                    {
+                        "id": 43298946,
+                        "commit_id": 1851572024561153300,
+                        "content": "Компания РБТ рада сообщить о запуске новой услуги по ремонту телевизоров! Мы знаем, как важно для вас наслаждаться любимыми фильмами и передачами без перебоев, и готовы предложить качественный и быстрый ремонт вашей техники.\n\n🔧 **Почему выбирают нас?**\n- **Квалифицированные специалисты:** Наша команда состоит из опытных мастеров, которые знают все нюансы ремонта телевизоров различных брендов.\n- **Скорость выполнения работ:** Мы ценим ваше время и стремимся к максимально быстрому решению вашей проблемы.\n- **Гарантия качества:** Используем только оригинальные запчасти и проверенные технологии ремонта.\n- **Прозрачные расценки:** У нас нет скрытых платежей – вы всегда будете знать, за что платите.\n\n💡 **Специальное предложение!**\nТолько до конца месяца при заказе ремонта телевизора вы получаете бесплатную диагностику и 10% скидку на услуги!\n\nНе откладывайте на потом – если ваш телевизор требует внимания, свяжитесь с нами! Позвоните по телефону +79935504483 или оставьте заявку на нашем сайте Бытсервис.online, и наши мастера быстро решат вашу проблему.\n\nРБТ – мы заботимся о вашем комфорте и качестве вашего досуга!\n\n**Контактная информация:**\n- Адрес: г. Тверь, ул. Радищева 48\n- Телефон: +79935504483\n- Сайт: Бытсервис.online\n\nСледите за нашими новостями и акциями в Яндекс Бизнес!",
+                        "permanent_id": 195980028998,
+                        "publication_time": 1724410214657,
+                        "photos": [
+                            {
+                                "value": {
+                                    "group": 10325531,
+                                    "name": "2a000001917edba83eee8fe4807ff54df122"
+                                },
+                                "created": 1724410210964,
+                                "author": 2016744911,
+                                "size": {
+                                    "width": 1920,
+                                    "height": 1082
+                                },
+                                "moderation_status": {
+                                    "status": "suitable"
+                                },
+                                "id": "be594e73-372e-40be-aaea-b3684a48d76c",
+                                "url_template": "https:\u002F\u002Favatars.mds.yandex.net\u002Fget-sprav-posts\u002F10325531\u002F2a000001917edba83eee8fe4807ff54df122\u002F%s"
+                            }
+                        ],
+                        "moderation_status": {
+                            "status": "suitable"
+                        },
+                        "text_moderation_status": {
+                            "status": "suitable"
+                        },
+                        "content_short": "Компания РБТ рада сообщить о запуске новой услуги по ремонту телевизоров! Мы знаем, как важно для вас наслаждаться любимыми фильмами и перед...",
+                        "reactions": {
+                            "likes": 0,
+                            "dislikes": 0
+                        }
+                    },
+                    {
+                        "id": 43298864,
+                        "commit_id": 1851571793706515700,
+                        "content": "Компания РБТ с гордостью объявляет о запуске новой услуги по ремонту стиральных машин! Мы понимаем, как важна исправная бытовая техника в вашем доме, и готовы предложить вам качественные и быстрые решения.\n\n🔧 **Почему выбирают нас?**\n- **Профессиональные мастера:** Наша команда состоит из опытных специалистов, которые знают все тонкости ремонта стиральных машин различных брендов.\n- **Скорость и эффективность:** Мы обеспечиваем оперативное выполнение работ, чтобы вы могли вернуться к привычному ритму жизни как можно скорее.\n- **Гарантия качества:** Используем только оригинальные запчасти и проверенные методы ремонта.\n- **Прозрачные цены:** Мы предлагаем честные расценки без скрытых платежей и сюрпризов.\n\n💡 **Специальное предложение!**\nТолько до конца месяца при заказе ремонта стиральной машины вы получаете бесплатную диагностику и 15% скидку на услуги!\n\nНе откладывайте на потом – если ваша стиральная машина требует внимания, свяжитесь с нами! Позвоните по телефону +79935504483, и наши мастера быстро решат вашу проблему.\n\nРБТ – мы заботимся о вашем комфорте и чистоте вашего дома!",
+                        "permanent_id": 195980028998,
+                        "publication_time": 1724409910178,
+                        "photos": [
+                            {
+                                "value": {
+                                    "group": 12894444,
+                                    "name": "2a000001917ed6f88e6224664cd208181c1a"
+                                },
+                                "created": 1724409903559,
+                                "author": 2016744911,
+                                "size": {
+                                    "width": 2000,
+                                    "height": 1333
+                                },
+                                "moderation_status": {
+                                    "status": "suitable"
+                                },
+                                "id": "d0e078e0-90cb-41a1-b9a3-7c1c82c9cf52",
+                                "url_template": "https:\u002F\u002Favatars.mds.yandex.net\u002Fget-sprav-posts\u002F12894444\u002F2a000001917ed6f88e6224664cd208181c1a\u002F%s"
+                            }
+                        ],
+                        "moderation_status": {
+                            "status": "suitable"
+                        },
+                        "text_moderation_status": {
+                            "status": "suitable"
+                        },
+                        "content_short": "Компания РБТ с гордостью объявляет о запуске новой услуги по ремонту стиральных машин! Мы понимаем, как важна исправная бытовая техника в ва...",
+                        "reactions": {
+                            "likes": 0,
+                            "dislikes": 0
+                        }
+                    },
+                    {
+                        "id": 43298703,
+                        "commit_id": 1851571359914827300,
+                        "content": "Компания РБТ, расположенная в сердце Твери, рада сообщить о запуске новой услуги по ремонту холодильников! Мы понимаем, как важно для вас иметь исправную бытовую технику, и готовы предложить профессиональные решения для всех брендов и моделей.\n\n🔧 **Почему выбирают нас?**\n- **Опытные мастера:** Наша команда состоит из квалифицированных специалистов с многолетним опытом работы.\n- **Быстрый сервис:** Мы гарантируем оперативное реагирование на заявки и выполнение работ в кратчайшие сроки.\n- **Качество и надежность:** Используем только оригинальные запчасти и современное оборудование для ремонта.\n- **Гибкая система цен:** Мы предлагаем прозрачные расценки без скрытых платежей.\n\n💡 **Специальное предложение!**\nТолько до конца месяца при заказе услуги ремонта холодильника вы получите бесплатную диагностику и 10% скидку на работу!\n\nНе ждите, пока поломка станет серьезной! Позвоните нам по телефону +79935504483, и мы быстро решим вашу проблему.\n\nРБТ – мы заботимся о вашем комфорте! \n\n**Контактная информация:**\n- Адрес: г.Тверь, ул.Радищева 48\n- Телефон: +79935504483\n- Сайт: Бытсервис.online\n\nСледите за нашими новостями и акциями в Яндекс Бизнес!",
+                        "permanent_id": 195980028998,
+                        "publication_time": 1724409491365,
+                        "photos": [
+                            {
+                                "value": {
+                                    "group": 12797248,
+                                    "name": "2a000001917ed092440fc7b70d5eabadb55d"
+                                },
+                                "created": 1724409484519,
+                                "author": 2016744911,
+                                "size": {
+                                    "width": 1680,
+                                    "height": 1117
+                                },
+                                "moderation_status": {
+                                    "status": "suitable"
+                                },
+                                "id": "fdfa2a4e-af87-4d8d-be4c-1c7cf70bf77d",
+                                "url_template": "https:\u002F\u002Favatars.mds.yandex.net\u002Fget-sprav-posts\u002F12797248\u002F2a000001917ed092440fc7b70d5eabadb55d\u002F%s"
+                            }
+                        ],
+                        "moderation_status": {
+                            "status": "suitable"
+                        },
+                        "text_moderation_status": {
+                            "status": "suitable"
+                        },
+                        "content_short": "Компания РБТ, расположенная в сердце Твери, рада сообщить о запуске новой услуги по ремонту холодильников! Мы понимаем, как важно для вас им...",
+                        "reactions": {
+                            "likes": 0,
+                            "dislikes": 0
+                        }
+                    }
+                ],
+                "draftPost": {
+                    "content": "",
+                    "photos": []
+                },
+                "isDev": false
+            }
+        },
+        "hasTouchMenuBurger": true,
+        "notifications": [
+            "company_changes",
+            "company_statistic",
+            "company_feedback_request_status",
+            "company_feedback_request_status_sms",
+            "recommendations",
+            "premoderation",
+            "premoderation_sms",
+            "discounts_and_events",
+            "discounts_and_events_sms",
+            "tycoon_news"
+        ],
+        "navigation": "companies",
+        "variables": {
+            "MAPS_API_KEY": "d952d15e-2c56-4701-9bc8-cbede9de5cc1",
+            "STATIC_MAPS_API_KEY": "0c47165c-489e-47c5-a163-c4cdf9b5fee4",
+            "STATIC_MAPS_SIGNING_SECRET": "xbJbUxAkMjg1X1wD6BMwip_j4p_ErkD8QH6EOs0D"
+        }
+    }
+}

@@ -1,0 +1,115 @@
+#mySidebar {
+    overflow-y: auto;
+    /* Scroll when content overflows */
+    padding: 20px;
+    /* Padding inside the sidebar */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    /* Width of the sidebar */
+    height: 100%;
+    /* Full height */
+    background-color: #f9f9f9;
+    /* Background color */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    /* Shadow */
+    z-index: 9999;
+    /* Ensure the sidebar is above other elements */
+    font-family: Arial, sans-serif;
+    /* Font family */
+    color: #333;
+    /* Text color */
+}
+
+#mySidebar h1 {
+    font-size: 24px;
+    color: #4CAF50;
+    /* Green color for the header */
+    margin-bottom: 20px;
+}
+
+#mySidebar label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#mySidebar input[type="text"],
+#mySidebar input[type="password"],
+#mySidebar input[type="number"],
+#mySidebar textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#mySidebar button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#mySidebar button:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
+
+#mySidebar #loginStatus,
+#mySidebar #pingStatus,
+#mySidebar #reviewResponsStatus {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#mySidebar #pingId,
+#mySidebar #reviewResponsId,
+#mySidebar #reviewPreview {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    word-wrap: break-word;
+}
+
+#mySidebar textarea[readonly] {
+    background-color: #e9e9e9;
+}
+
+.spinner {
+    border: 2px solid #f3f3f3;
+    /* Light grey */
+    border-top: 2px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

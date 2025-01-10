@@ -1,12 +1,25 @@
 {
+  "name": "business-browser-extension",
+  "description": "manifest.json description",
+  "version": "1.5.1",
+  "type": "module",
+  "private": true,
   "scripts": {
-    "test": "jest"
+    "dev": "wxt",
+    "build": "wxt build",
+    "compile": "vue-tsc --noEmit",
+    "postinstall": "wxt prepare",
+    "zip": "wxt zip"
   },
-  "jest": {
-    "testEnvironment": "node"
+  "dependencies": {
+    "vue": "^3.5.12",
+    "webext-bridge": "^6.0.1"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "jsdom": "^25.0.1"
+    "@types/chrome": "^0.0.280",
+    "@wxt-dev/module-vue": "^1.0.1",
+    "typescript": "5.6.3",
+    "vue-tsc": "^2.1.10",
+    "wxt": "^0.19.13"
   }
 }

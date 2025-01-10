@@ -10,7 +10,7 @@
         <groupId>ru.pashutin</groupId>
         <version>1.5.1</version>
     </parent>
-    <artifactId>yandex-business-chrome-extension</artifactId>
+    <artifactId>business-browser-extension</artifactId>
     <packaging>pom</packaging>
 
     <name>YandexBusiness</name>

@@ -13,7 +13,7 @@
     <artifactId>business-browser-extension</artifactId>
     <packaging>pom</packaging>
 
-    <name>YandexBusiness</name>
+    <name>BrowserExtension</name>
 
     <description>Extension for automatization yandex-business actions.</description>
 

@@ -7,8 +7,8 @@ export default defineConfig({
   extensionApi: 'chrome',
   modules: ['@wxt-dev/module-vue'],
   manifest: {
-    name: 'YandexBusinessAI',
-    description: 'Расширение для генерации ответов на отзывы с помощью искусственного интеллекта',
+    name: 'BusinessArtificialIntelligence',
+    description: 'Расширение для генерации ответов на отзывы и продвижения бизнеса с помощью искусственного интеллекта',
     permissions: ['storage', 'tabs']
   },
   runner: {

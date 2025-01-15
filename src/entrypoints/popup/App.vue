@@ -1,18 +1,23 @@
-<script lang="ts" setup>
-import HelloWorld from '@/components/HelloWorld.vue';
-</script>
-
-<template>
+<template xmlns="http://www.w3.org/1999/html">
   <div>
-    <a href="https://wxt.dev" target="_blank">
-      <img src="/wxt.svg" class="logo" alt="WXT logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="@/assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <header class="p-4 bg-gray-100">
+      <nav v-if="authStore.isAuthenticated">
+        <label>Нормальная работа</label>
+        <NuxtPage/>
+      </nav>
+      <nav v-else class="flex gap-4">
+        <NuxtLink to="/login" class="text-blue-500 hover:text-blue-600">Login</NuxtLink>
+      </nav>
+    </header>
   </div>
-  <HelloWorld msg="WXT + Vue" />
 </template>
+
+<script setup lang="ts">
+import {onMounted} from "vue";
+
+const authStore = useAuthStore()
+onMounted(() => { authStore.checkAuth() })
+</script>
 
 <style scoped>
 .logo {

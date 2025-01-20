@@ -1,20 +1,26 @@
 {
   "name": "business-browser-extension",
-  "description": "manifest.json description",
+  "description": "Расширение для подключения возможностей искусственного интеллекта к продвижению своих услуг в Яндекс-бизнесе",
   "version": "1.5.1",
   "type": "module",
   "private": true,
   "scripts": {
     "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
     "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
     "compile": "vue-tsc --noEmit",
-    "postinstall": "wxt prepare",
-    "zip": "wxt zip"
+    "postinstall": "wxt prepare"
   },
   "dependencies": {
+    "jenesius-vue-form": "^3.0.21",
+    "js-base64": "^3.7.7",
+    "jwt-decode": "^4.0.0",
     "pinia": "^2.3.0",
-    "vue": "^3.5.12",
-    "webext-bridge": "^6.0.1"
+    "ts-md5": "^1.3.1",
+    "vue": "^3.5.12"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.280",

@@ -1,4 +1,3 @@
-{
-  "extends": "./.wxt/tsconfig.json",
+{ "extends": "./.wxt/tsconfig.json",
   "include": ["src/shim.d.ts"]
 }

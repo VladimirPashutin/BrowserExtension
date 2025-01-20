@@ -12,6 +12,7 @@ npm-debug.log*
 **/.DS_Store
 **/Thumbs.db
 stats-*.json
+node_modules
 */.vscode/*
 **/.build-*
 **/.netlify
@@ -36,6 +37,7 @@ stats.html
 **/*.war
 **/*.wmv
 .vscode
+.output
 *.ntvs*
 **/node
 **/.tmp

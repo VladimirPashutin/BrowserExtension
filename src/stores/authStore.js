@@ -37,62 +37,120 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useAuthStore = void 0;
+// @ts-ignore
+var main_ts_1 = require("../entrypoints/popup/main.ts");
+var jwt_decode_1 = require("jwt-decode");
 var pinia_1 = require("pinia");
+var js_base64_1 = require("js-base64");
+var ts_md5_1 = require("ts-md5");
 exports.useAuthStore = (0, pinia_1.defineStore)('auth', {
     state: function () { return ({
         isAuthenticated: false,
-        loading: true,
-        token: null,
+        tokens: null,
         user: null
     }); },
     actions: {
-        setUser: function (user) {
-            this.isAuthenticated = true;
-            this.user = user;
-        },
-        setToken: function (token) {
-            localStorage.setItem('token', token);
-            this.token = token;
-        },
-        clearAuth: function () {
-            this.user = null;
-            this.token = null;
+        clearAuthentication: function () {
             this.isAuthenticated = false;
-            localStorage.removeItem('token');
+            localStorage.removeItem('accessToken');
+            localStorage.removeItem('refreshToken');
+            this.token = null;
+            this.user = null;
         },
-        login: function (email, password) {
+        checkAuth: function () {
             return __awaiter(this, void 0, void 0, function () {
-                var response, error_1;
+                var accessToken, jwtToken;
+                return __generator(this, function (_a) {
+                    try {
+                        accessToken = localStorage.getItem('accessToken');
+                        if (accessToken) {
+                            jwtToken = (0, jwt_decode_1.jwtDecode)(accessToken);
+                            this.user = { id: jwtToken['id'],
+                                application: jwtToken['application'],
+                                name: jwtToken['userName'],
+                                roles: jwtToken['roles']
+                            };
+                            this.tokens = { accessToken: accessToken,
+                                refreshToken: localStorage.getItem('refreshToken')
+                            };
+                            this.isAuthenticated = true;
+                        }
+                        else {
+                            return [2 /*return*/, false];
+                        }
+                    }
+                    catch (_b) {
+                        this.clearAuthentication();
+                        return [2 /*return*/, false];
+                    }
+                    return [2 /*return*/];
+                });
+            });
+        },
+        getAuthToken: function () {
+            if (!this.tokens) {
+                this.tokens = { accessToken: localStorage.getItem('accessToken'),
+                    refreshToken: localStorage.getItem('refreshToken')
+                };
+            }
+            return this.tokens.accessToken;
+        },
+        setTokens: function (tokens) {
+            var jwtToken = (0, jwt_decode_1.jwtDecode)(tokens.accessToken);
+            if (jwtToken) {
+                this.user = { id: jwtToken['id'],
+                    application: jwtToken['application'],
+                    name: jwtToken['userName'],
+                    roles: jwtToken['roles'],
+                    subject: jwtToken['sub']
+                };
+                this.tokens = tokens;
+                this.isAuthenticated = true;
+                localStorage.setItem('accessToken', tokens.accessToken);
+                localStorage.setItem('refreshToken', tokens.refreshToken);
+            }
+            else {
+                this.clearAuthentication();
+            }
+        },
+        login: function (value) {
+            return __awaiter(this, void 0, void 0, function () {
+                var credentials, response, error_1;
                 var _this = this;
                 return __generator(this, function (_a) {
                     switch (_a.label) {
                         case 0:
                             _a.trys.push([0, 2, , 3]);
-                            return [4 /*yield*/, fetch('${import.meta.env.WXT_AUTH_LOGIN_URL}', {
-                                    body: JSON.stringify({ username: email, password: password }),
-                                    method: 'POST'
+                            credentials = (0, js_base64_1.encode)(value.login + "::" + ts_md5_1.Md5.hashStr(value.password));
+                            return [4 /*yield*/, fetch((0, main_ts_1.loginUrl)() + "login", { method: 'POST', headers: { "Content-Type": "application/json" },
+                                    body: JSON.stringify({ application: 'business-ai', credentials: credentials, authType: "BEARER" })
                                 })];
                         case 1:
                             response = _a.sent();
                             if (response.ok) {
                                 response.json().then(function (data) {
-                                    _this.setToken(data);
+                                    _this.setTokens(data);
                                 });
                             }
                             else {
                                 console.error('Login error - ', response.status);
+                                this.clearAuthentication();
                             }
-                            this.setToken(response.token);
                             return [3 /*break*/, 3];
                         case 2:
                             error_1 = _a.sent();
                             console.error('Login error:', error_1);
+                            this.clearAuthentication();
                             return [3 /*break*/, 3];
                         case 3: return [2 /*return*/];
                     }
                 });
             });
+        },
+        logout: function () {
+            this.clearAuthentication();
+            window.location.replace("/");
         }
     }
 });
-//# sourceMappingURL=auth.js.map
+//# sourceMappingURL=authStore.js.map

@@ -10,7 +10,7 @@ exports.default = (0, wxt_1.defineConfig)({
     manifest: {
         name: 'BusinessArtificialIntelligence',
         description: 'Расширение для генерации ответов на отзывы и продвижения бизнеса с помощью искусственного интеллекта',
-        permissions: ['storage', 'tabs']
+        permissions: ['storage', 'tabCapture', 'tabs', 'activeTab']
     }
 });
 //# sourceMappingURL=wxt.config.js.map

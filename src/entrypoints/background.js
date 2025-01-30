@@ -1,6 +1,5 @@
-import {onMessage,sendMessage,openStream} from "webext-bridge/background";
+import {getUserInfo,sendMessage,onMessage,Publication} from "../messaging.ts";
 import {apiUrl,loginUrl,getRequestApiInterval} from "../utils.ts";
-import {getUserInfo, Publication} from "../messages.ts";
 import {encode} from 'js-base64';
 import {Md5} from 'ts-md5'
 
@@ -26,6 +25,49 @@ const getDataFromServer = async (token, url)=> {
     return null;
 }
 
+let targetLocation = undefined;
+let currentLocation = undefined;
+
+const currentLocationChanged = () => {
+    let timerId;
+    let counter = 0;
+    const waitForSwitch = (resolve,reject) => {
+        if(counter > 30000) { clearTimeout(timerId); reject("Target location unavailable"); }
+        else if(targetLocation === undefined) { clearTimeout(timerId); reject("Target undefined"); }
+        else if(currentLocation !== undefined && currentLocation.endsWith(targetLocation)) {
+            clearTimeout(timerId); resolve();
+        } else { counter = counter + 1;
+            timerId = setTimeout(waitForSwitch, 100, resolve, reject);
+        }
+    }
+    return new Promise((resolve,reject) => {
+        timerId = setTimeout(waitForSwitch, 100, resolve, reject);
+    })
+}
+
+async function makePublications(publicationsData, accessToken, workingTabId) {
+    for(const publication of publicationsData) {
+        const images = [];
+        for(let i = 0; i < publication.imagesUrl.length; i++) {
+            const image = await getDataFromServer(accessToken, publication.imagesUrl[i]);
+            if(image !== null && image.length > 0) {
+                images[i] = encode(image);
+            }
+        }
+        const message = new Publication(images, publication.note, publication.id);
+        const processed = await sendMessage('makePublication', message, workingTabId);
+        if(processed) { await exchangeWithServer(accessToken, "PUT", "publications/" + publication.id); }
+    }
+}
+
+async function processReviews(workingTabId, accessToken) {
+    const unansweredReviews = await sendMessage('getUnansweredReviews', null, workingTabId);
+    if(unansweredReviews !== null && unansweredReviews.length > 0)
+    { await exchangeWithServer(accessToken, "POST", 'generateReviews', unansweredReviews); }
+    const generatedResponses = await exchangeWithServer(accessToken, "GET", "takeResponses");
+    for(const message of generatedResponses) { await sendMessage('doResponse', message, workingTabId); }
+}
+
 export default defineBackground(() => {
     let accessToken = undefined;
     let refreshToken = undefined;
@@ -41,35 +83,24 @@ export default defineBackground(() => {
     setInterval(async () => {
         if(accessToken !== undefined && processingEnabled && workingTabId !== undefined && workingTabId !== null) {
             const publicationsData = await exchangeWithServer(accessToken, "GET", "publications");
-            console.log("Получены публикации", publicationsData);
-            for(const message of publicationsData) {
-                for(const imageUrl of message.imagesUrl) {
-                    const imageContainer = getDataFromServer(accessToken, apiUrl() + imageUrl);
-                    if(imageContainer !== null) {
-                        imageContainer.then((data) => {
-                            if(data !== null) {
-                                openStream('image' + imageUrl,'content-script@' + workingTabId).
-                                then((outStream) => { data.stream.pipe(outStream); outStream.close()})
-                            }
-                        })
-                    }
-                }
+            if(publicationsData !== null && publicationsData.length > 0) {
+                if(!currentLocation.endsWith("/posts")) {
+                    targetLocation = "/posts";
+                    await sendMessage('switchLocation', "posts", workingTabId)
+                    currentLocationChanged().then(() => {
+                        makePublications(publicationsData, accessToken, workingTabId);
+                    })
+                } else { await makePublications(publicationsData, accessToken, workingTabId); }
             }
-            for(const message of publicationsData) {
-                const processed = await sendMessage('publications',
-                                                   message, "content-script@" + workingTabId);
-                if(processed) { await exchangeWithServer(accessToken, "PUT", "publications/" + message.id); }
-            }
-            // const unansweredReviews = await sendMessage('unansweredReviews', '',
-            //                                                 "content-script@" + workingTabId);
-            // if(unansweredReviews)
-            // { await getDataFromServer(accessToken, "POST", 'generateReviews', unansweredReviews); }
-            // const generatedResponses = await getDataFromServer(accessToken, "GET", "takeResponses");
-            // for(const message of generatedResponses)
-            // { await sendMessage('doResponse', message, "content-script@" + workingTabId); }
+            if(!currentLocation.endsWith("/reviews")) {
+                targetLocation = "/reviews";
+                await sendMessage('switchLocation', "reviews", workingTabId)
+                currentLocationChanged().then(() => { processReviews(workingTabId, accessToken); })
+            } else { await processReviews(workingTabId, accessToken); }
         }
     }, getRequestApiInterval())
-    onMessage('stateFlags', () => {
+    onMessage('getStateInfo', ({data}) => {
+        currentLocation = data;
         return { "authenticated": accessToken !== undefined, "processing": processingEnabled }
     })
     onMessage('logout', () => {
@@ -79,10 +110,10 @@ export default defineBackground(() => {
     })
     onMessage('processLogin', async (message) => {
         try{
-            if(message.sender.tabId === null) {
+            if(message.sender.tab.id === null) {
                 const tabs = await chrome.tabs.query({active: true, currentWindow: true});
                 workingTabId = tabs[0].id;
-            } else { workingTabId = message.sender.tabId; }
+            } else { workingTabId = message.sender.tab.id; }
             const request = { "application": "business-ai", "authType": "BEARER",
                                    "credentials": encode(message.data.login + "::" +
                                     Md5.hashStr(message.data.password))}
@@ -102,7 +133,7 @@ export default defineBackground(() => {
     onMessage('processing', async ({data}) => {
         processingEnabled = data;
     })
-    onMessage('userInfo', () => {
+    onMessage('getUserInfo', () => {
         if(accessToken === undefined) { return null; }
         return getUserInfo(accessToken);
     })

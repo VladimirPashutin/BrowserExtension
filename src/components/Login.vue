@@ -10,15 +10,15 @@ const doLogin = (form) => {
 </script>
 
 <template>
-  <div class="loginForm">
+  <form class="loginForm">
     <div style="color: red">{{props.errorMessage}}</div>
     <label for="login">Имя пользователя:</label>
     <form-field type="text" name = "login"/>
     <label for="password">Пароль:</label>
-    <form-field name = "password" type = "password" @keyup.enter="doLogin(form)"/>
+    <form-field name = "password" type = "password" autocomplete="current-password" @keyup.enter="doLogin(form)"/>
     <button type="submit" @click = "doLogin(form)">Войти</button>
     <button type="reset" @click = "$emit('close')">Закрыть</button>
-  </div>
+  </form>
 </template>
 
 <style scoped>

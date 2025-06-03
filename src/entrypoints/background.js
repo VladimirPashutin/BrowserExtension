@@ -1,5 +1,6 @@
-import {getUserInfo,sendMessage,onMessage,Publication} from "../messaging.ts";
+import {getUserInfo, sendMessage, onMessage, Publication, StateInfo} from "../messaging.ts";
 import {apiUrl,loginUrl,getRequestApiInterval} from "../utils.ts";
+import {defineBackground} from "wxt/sandbox";
 import {encode} from 'js-base64';
 import {Md5} from 'ts-md5'
 
@@ -11,16 +12,27 @@ const exchangeWithServer = async (token, method, url, body = undefined) => {
     else { headers.append("Content-Type", "application/json");
         response = await fetch(apiUrl() + url, {"method": method, "headers": headers, "body": JSON.stringify(body)});
     }
-    if(response.ok) { return await response.json(); }
+    if(response.ok) {
+        let contentType = response.headers.get('Content-Type');
+        if(contentType !== null && contentType !== undefined) {
+            contentType = contentType.toLowerCase();
+            if(contentType.includes('application/json'))
+            { return response.json(); }
+            if(contentType.includes('application/octet-stream') ||
+                contentType.includes('image'))
+            { return response.blob(); }
+        }
+        return response.text();
+    } else { console.error("Ошибка получения данных"); }
     return null;
 }
 
-const getDataFromServer = async (token, url)=> {
+const getImageFromServer = async (token, url)=> {
     const headers = new Headers();
     let response;
     headers.append("Authorization", token);
     headers.append("Content-Type", "application/octet-stream");
-    response = await fetch(apiUrl() + url, {"method": "GET", "headers": headers});
+    response = await fetch(apiUrl() + "image/" + url, {"method": "GET", "headers": headers});
     if(response.ok) { return await response.blob(); }
     return null;
 }
@@ -48,24 +60,38 @@ const currentLocationChanged = () => {
 async function makePublications(publicationsData, accessToken, workingTabId) {
     for(const publication of publicationsData) {
         const images = [];
-        for(let i = 0; i < publication.imagesUrl.length; i++) {
-            const image = await getDataFromServer(accessToken, publication.imagesUrl[i]);
-            if(image !== null && image.length > 0) {
+        for(let i = 0; i < publication.images.length; i++) {
+            const image = await getImageFromServer(accessToken, publication.images[i]);
+            if(image !== null && image.size > 0) {
                 images[i] = encode(image);
             }
         }
         const message = new Publication(images, publication.note, publication.id);
         const processed = await sendMessage('makePublication', message, workingTabId);
-        if(processed) { await exchangeWithServer(accessToken, "PUT", "publications/" + publication.id); }
+        if(processed) { await exchangeWithServer(accessToken, "POST",
+                   "publications/yandex-business/" + publication.id);
+        }
     }
 }
 
 async function processReviews(workingTabId, accessToken) {
     const unansweredReviews = await sendMessage('getUnansweredReviews', null, workingTabId);
-    if(unansweredReviews !== null && unansweredReviews.length > 0)
-    { await exchangeWithServer(accessToken, "POST", 'generateReviews', unansweredReviews); }
-    const generatedResponses = await exchangeWithServer(accessToken, "GET", "takeResponses");
-    for(const message of generatedResponses) { await sendMessage('doResponse', message, workingTabId); }
+    const orgName = await sendMessage('getOrganization', null, workingTabId);
+    if(unansweredReviews !== null && unansweredReviews.length > 0) {
+        await exchangeWithServer(accessToken, "POST", 'generateReviews/' +
+              orgName + '/yandex-business', unansweredReviews);
+        for(const review of unansweredReviews) {
+            await sendMessage('markReadReviews', review.text, workingTabId);
+        }
+    }
+    const generatedResponses = await exchangeWithServer(accessToken,
+         "GET", "takeResponses/" + orgName + "/yandex-business");
+    if(generatedResponses !== null && Symbol.iterator in Object(generatedResponses)) {
+        for(const message of generatedResponses) {
+            await sendMessage('doResponse', message, workingTabId);
+            await exchangeWithServer(accessToken, "POST", "/acceptResponse/yandex-business/" + message.id);
+        }
+    }
 }
 
 export default defineBackground(() => {
@@ -82,9 +108,11 @@ export default defineBackground(() => {
     });
     setInterval(async () => {
         if(accessToken !== undefined && processingEnabled && workingTabId !== undefined && workingTabId !== null) {
-            const publicationsData = await exchangeWithServer(accessToken, "GET", "publications");
+            const orgName = await sendMessage('getOrganization', null, workingTabId);
+            const publicationsData = await exchangeWithServer(accessToken,
+                 "GET", "publications/" + orgName + "/yandex-business");
             if(publicationsData !== null && publicationsData.length > 0) {
-                if(!currentLocation.endsWith("/posts")) {
+                if(!currentLocation.endsWith("/posts/")) {
                     targetLocation = "/posts";
                     await sendMessage('switchLocation', "posts", workingTabId)
                     currentLocationChanged().then(() => {
@@ -92,16 +120,20 @@ export default defineBackground(() => {
                     })
                 } else { await makePublications(publicationsData, accessToken, workingTabId); }
             }
-            if(!currentLocation.endsWith("/reviews")) {
+            if(!currentLocation.endsWith("/reviews/")) {
                 targetLocation = "/reviews";
                 await sendMessage('switchLocation', "reviews", workingTabId)
                 currentLocationChanged().then(() => { processReviews(workingTabId, accessToken); })
             } else { await processReviews(workingTabId, accessToken); }
         }
     }, getRequestApiInterval())
-    onMessage('getStateInfo', ({data}) => {
-        currentLocation = data;
-        return { "authenticated": accessToken !== undefined, "processing": processingEnabled }
+    onMessage('getStateInfo', async (message) => {
+        if(message.sender.tab.id === null) {
+            const tabs = await chrome.tabs.query({active: true, currentWindow: true});
+            workingTabId = tabs[0].id;
+        } else { workingTabId = message.sender.tab.id; }
+        currentLocation = message.data;
+        return new StateInfo(accessToken !== undefined, processingEnabled);
     })
     onMessage('logout', () => {
         processingEnabled = false
@@ -109,11 +141,7 @@ export default defineBackground(() => {
         accessToken = undefined;
     })
     onMessage('processLogin', async (message) => {
-        try{
-            if(message.sender.tab.id === null) {
-                const tabs = await chrome.tabs.query({active: true, currentWindow: true});
-                workingTabId = tabs[0].id;
-            } else { workingTabId = message.sender.tab.id; }
+        try {
             const request = { "application": "business-ai", "authType": "BEARER",
                                    "credentials": encode(message.data.login + "::" +
                                     Md5.hashStr(message.data.password))}
@@ -130,7 +158,7 @@ export default defineBackground(() => {
         accessToken = undefined;
         return false;
     })
-    onMessage('processing', async ({data}) => {
+    onMessage('processing', ({data}) => {
         processingEnabled = data;
     })
     onMessage('getUserInfo', () => {

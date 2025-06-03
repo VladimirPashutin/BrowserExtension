@@ -1,9 +1,14 @@
 import {defineExtensionMessaging} from "@webext-core/messaging";
 import {jwtDecode} from "jwt-decode"
 
-export interface StateInfo {
-    authenticated: boolean
-    processing: boolean
+export class StateInfo {
+    processing: boolean;
+    authenticated: boolean;
+    constructor(authenticated: boolean,
+                processing: boolean) {
+        this.authenticated = authenticated;
+        this.processing = processing;
+    }
 }
 
 export class Publication {
@@ -74,10 +79,12 @@ interface ProtocolMap {
     processLogin(data: LoginData): boolean;
     makePublication(publication: Publication): boolean;
     doResponse(response: GeneratedResponse): void;
+    getUnansweredReviews(): ReviewInfo[] | null;
     getStateInfo(location: string): StateInfo;
+    markReadReviews(review: string): void;
     switchLocation(target: string): void;
-    getUnansweredReviews(): ReviewInfo[];
     processing(flag: boolean): void;
+    getOrganization(): string;
     getUserInfo(): UserInfo;
     logout(): void;
 }

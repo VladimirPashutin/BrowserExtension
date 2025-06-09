@@ -1,23 +1,20 @@
+import {jwtDecode, JwtPayload} from "jwt-decode"
 import {defineExtensionMessaging} from "@webext-core/messaging";
-import {jwtDecode} from "jwt-decode"
 
-export class StateInfo {
-    processing: boolean;
-    authenticated: boolean;
-    constructor(authenticated: boolean,
-                processing: boolean) {
-        this.authenticated = authenticated;
-        this.processing = processing;
-    }
+export function getUserInfo(jwt: string | undefined): UserInfo | undefined {
+    if(jwt === undefined) { return undefined; }
+    const userInfo = jwtDecode(jwt);
+    return {communities: <string[]>userInfo['communities' as keyof JwtPayload],
+            application: 'business-ai', name: <string>userInfo['userName' as keyof JwtPayload],
+            roles: <string[]>userInfo['roles' as keyof JwtPayload]} as UserInfo;
 }
 
-export class Publication {
-    constructor(images: string[],
-                note: string, id: string) {
-        this.images = images;
-        this.note = note;
-        this.id = id;
-    }
+export interface StateInfo {
+    authenticated: boolean;
+    processing: boolean;
+}
+
+export interface Publication {
     images: string[];
     note: string;
     id: string;
@@ -28,22 +25,14 @@ export interface LoginData {
     login: string;
 }
 
-export class UserInfo {
+export interface UserInfo {
     communities: string[] | undefined;
     application: string | undefined;
     roles: string[] | undefined;
     name: string | undefined;
 }
 
-export class ReviewInfo {
-    constructor(id: string, time: Date, author: string,
-                rating: string, text: string) {
-        this.author = author;
-        this.rating = rating;
-        this.text = text;
-        this.time = time;
-        this.id = id;
-    }
+export interface Review {
     author: string;
     rating: string;
     text: string;
@@ -51,41 +40,23 @@ export class ReviewInfo {
     id: string;
 }
 
-export class GeneratedResponse {
-    constructor(id: string, review: string, response: string) {
-        this.response = response;
-        this.review = review;
-        this.id = id;
-    }
+export interface Response {
     response: string;
     review: string;
     id: string;
 }
 
-export function getUserInfo(jwt: string): UserInfo {
-    const result = new UserInfo();
-    const userInfo = jwtDecode(jwt);
-    // @ts-ignore
-    result.communities = userInfo['communities'];
-    result.application = 'business-ai';
-    // @ts-ignore
-    result.name = userInfo['userName'];
-    // @ts-ignore
-    result.roles = userInfo['roles'];
-    return result;
-}
-
 interface ProtocolMap {
-    processLogin(data: LoginData): boolean;
+    getStateInfo(): StateInfo;
+    getOrganization(): string;
+    doResponse(response: Response): void;
+    getUnansweredReviews(): Review[] | undefined;
     makePublication(publication: Publication): boolean;
-    doResponse(response: GeneratedResponse): void;
-    getUnansweredReviews(): ReviewInfo[] | null;
-    getStateInfo(location: string): StateInfo;
     markReadReviews(review: string): void;
     switchLocation(target: string): void;
+    getUserInfo(): UserInfo | undefined;
     processing(flag: boolean): void;
-    getOrganization(): string;
-    getUserInfo(): UserInfo;
+    login(data: LoginData): boolean;
     logout(): void;
 }
 

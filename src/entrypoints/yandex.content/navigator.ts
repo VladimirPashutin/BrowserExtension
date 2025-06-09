@@ -1,5 +1,3 @@
-import {ReviewInfo} from "@/messaging.ts";
-
 const selectMenuBox = () => {
     const menuBox = document.
           getElementsByClassName('sc-sidebar-ya-business-sidebar__box')
@@ -11,15 +9,13 @@ const selectMenuBox = () => {
 }
 
 export const selectPublication = () => {
-    return selectMenuBox()?.item(0)?.
-           getElementsByClassName('sc-sidebar-ya-business-sidebar-item__option sc-sidebar-ya-business-sidebar-item__option_tab_posts')?.
-           item(0)?.getElementsByTagName('a')?.item(0)?.click();
+    selectMenuBox()?.item(0)?.getElementsByClassName('sc-sidebar-ya-business-sidebar-item__option sc-sidebar-ya-business-sidebar-item__option_tab_posts')?.
+                     item(0)?.getElementsByTagName('a')?.item(0)?.click();
 };
 
 export const selectReview = () => {
-    return selectMenuBox()?.item(0)?.
-           getElementsByClassName('sc-sidebar-ya-business-sidebar-item__option sc-sidebar-ya-business-sidebar-item__option_tab_reviews')?.
-           item(0)?.getElementsByTagName('a')?.item(0)?.click();
+    selectMenuBox()?.item(0)?.getElementsByClassName('sc-sidebar-ya-business-sidebar-item__option sc-sidebar-ya-business-sidebar-item__option_tab_reviews')?.
+                     item(0)?.getElementsByTagName('a')?.item(0)?.click();
 }
 
 export const getOrganizationName = () => {
@@ -33,7 +29,7 @@ export const getPreloadedData = () => {
     for(const script of dom.getElementsByTagName('script')) {
         if(script?.textContent?.includes('__PRELOAD_DATA')) {
             try { const preloadDataMatch = script.textContent.
-                        match(/window\.__PRELOAD_DATA\s*=\s*(\{.*\});/);
+                        match(/window\.__PRELOAD_DATA\s*=\s*(\{.*});/);
                 if(preloadDataMatch && preloadDataMatch[1])
                 { return JSON.parse(preloadDataMatch[1]); }
             } catch (e) { console.error("Error parsing __PRELOAD_DATA:", e); }

@@ -3,6 +3,7 @@ import {FormField, Form} from "jenesius-vue-form";
 const props = defineProps<{errorMessage?: string}>();
 const emits = defineEmits(['login','close']);
 const form = new Form();
+//@ts-ignore
 const doLogin = (form) => {
   emits('login', { "login": form.getValueByName('login'),
                               "password": form.getValueByName('password') })
@@ -16,7 +17,7 @@ const doLogin = (form) => {
     <form-field type="text" name = "login"/>
     <label for="password">Пароль:</label>
     <form-field name = "password" type = "password" autocomplete="current-password" @keyup.enter="doLogin(form)"/>
-    <button type="submit" @click = "doLogin(form)">Войти</button>
+    <button type="button" @click = "doLogin(form)">Войти</button>
     <button type="reset" @click = "$emit('close')">Закрыть</button>
   </form>
 </template>

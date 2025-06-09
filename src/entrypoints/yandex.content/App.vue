@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import {decode} from "js-base64";
 import {onMounted,ref} from "vue"
+import {toUint8Array} from "js-base64";
 import {NButton,NButtonGroup} from "naive-ui";
 import Login from "../../components/Login.vue";
 import InfoPanel from "../../components/InfoPanel.vue";
-import {UserInfo, StateInfo, sendMessage, onMessage, ReviewInfo, LoginData} from "~~/src/messaging.ts";
+import {sendMessage, onMessage, StateInfo} from "~~/src/messaging.ts";
 import {getOrganizationName,getPreloadedData,getReviewElement,selectPublication,selectReview} from "./navigator.ts"
 
 const information = ref("");
@@ -18,15 +18,23 @@ const sleep = async (ms: number) => {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-const login = async (form: LoginData) => {
-  const loggedOn = await sendMessage('processLogin', form)
+const base64ToBlob = (source: string) => {
+  const contentType = source.substring(source.indexOf(':') + 1, source.indexOf(';'));
+  const byteCharacters = atob(source.split(",")[1]);
+  const byteArray = [];
+  for(let i = 0; i < byteCharacters.length; i++)
+  { byteArray.push(byteCharacters.charCodeAt(i)); }
+  return new Blob([new Uint8Array(byteArray)], { type: contentType });
+}
+
+const login = async (form: {login: string, password: string}) => {
+  const loggedOn = await sendMessage('login', form)
   if(loggedOn) { const orgName = getOrganizationName();
     if(orgName === null || orgName.length === 0) {
       information.value = "Для работы помощника должна быть выбрана конкретная организация"
       showInfo.value = true;
-      await logout();
     } else {
-      const userInfo: UserInfo = await sendMessage('getUserInfo', undefined);
+      const userInfo = await sendMessage('getUserInfo', undefined);
       if(userInfo === undefined || userInfo.communities === undefined) {
         information.value = "Для работы вам должна быть доступна организация";
         showInfo.value = true;
@@ -41,9 +49,8 @@ const login = async (form: LoginData) => {
           return;
         }
       }
-      information.value = "У Вас нет полномочий для запуска помощника на выбранной организации"
+      information.value = "У Вас нет полномочий для запуска помощника на выбранной организации";
       showInfo.value = true;
-      await logout();
     }
   } else { loginErrorMessage.value = "Ошибочный логин или пароль";
     information.value = "Ошибочный логин или пароль";
@@ -90,8 +97,8 @@ onMessage('getOrganization',() => {
 
 onMessage('switchLocation',({data}) => {
   switch(data) {
-    case 'posts': selectPublication(); break;
-    case 'reviews': selectReview(); break;
+    case '/posts/': selectPublication(); break;
+    case '/reviews/': selectReview(); break;
   }
 });
 
@@ -103,21 +110,20 @@ onMessage('makePublication',async ({data}) => {
       if(data.images !== null && data.images.length > 0) {
         const dataTransfer = new DataTransfer();
         for(let i = 0; i < data.images.length; i++) {
-          const file = new File([decode(data.images[i])], 'image' + i);
+          const file = new File([base64ToBlob(data.images[i])], 'image' + i);
           dataTransfer.items.add(file);
-          //@ts-ignore
-          fileInput.files = dataTransfer.files;
-          fileInput.dispatchEvent(changeEvent);
-          await sleep(5000);
         }
+        //@ts-ignore
+        fileInput.files = dataTransfer.files;
+        fileInput.dispatchEvent(changeEvent);
+        await sleep(5000);
       }
       //@ts-ignore
       makeTextInput(textInput, data.note);
       //@ts-ignore
       document.querySelector('.PostAddForm-Actions button').click();
-    } catch(e) { console.error("Ошибка публикации ", e); return false; }
-    await sleep(2000);
-    return true;
+      return true;
+    } catch(e) { console.error("Ошибка публикации ", e); }
   }
   return false;
 })
@@ -127,14 +133,14 @@ onMessage('getUnansweredReviews',() => {
   if (!content || !content.initialState || !content.initialState.edit || !content.initialState.edit.reviews ||
       !content.initialState.edit.reviews.list || !Array.isArray(content.initialState.edit.reviews.list.items)) {
     console.error('Invalid data format');
-    return null;
+    return undefined;
   }
   const result = [];
   for(let i = 0; i < content.initialState.edit.reviews.list.items.length; i++) {
     const review = content.initialState.edit.reviews.list.items[i];
     if('unread' === review.notify_status) {
-      result.push(new ReviewInfo(review.id, new Date(review.time_created),
-                  review.author.user, review.rating, review.full_text));
+      result.push({id: review.id, time: new Date(review.time_created),
+                   author: review.author.user, rating: review.rating, text: review.full_text});
     }
   }
   return result;
@@ -168,7 +174,7 @@ onMessage('doResponse', ({data}) => {
 });
 
 onMounted(async () => {
-  const state: StateInfo = await sendMessage('getStateInfo', window.location.pathname)
+  const state: StateInfo = await sendMessage('getStateInfo', undefined);
   authenticated.value = state.authenticated
   processing.value = state.processing
 });

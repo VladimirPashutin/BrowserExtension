@@ -5,7 +5,7 @@ const emits = defineEmits(['close']);
 
 <template>
   <div class="infoPanel">
-    <h4>{{info}}</h4>
+    <h4>{{props.info}}</h4>
     <button type="reset" @click = "$emit('close')">Закрыть</button>
   </div>
 </template>

@@ -32,16 +32,18 @@ const login = async (form: {login: string, password: string}) => {
   if(loggedOn) { const orgName = getOrganizationName();
     if(orgName === null || orgName.length === 0) {
       information.value = "Для работы помощника должна быть выбрана конкретная организация"
+      processLogin.value = false;
       showInfo.value = true;
     } else {
       const userInfo = await sendMessage('getUserInfo', undefined);
       if(userInfo === undefined || userInfo.communities === undefined) {
         information.value = "Для работы вам должна быть доступна организация";
+        processLogin.value = false;
         showInfo.value = true;
         return;
       }
       for(const organization of userInfo.communities) {
-        if(organization === orgName) {
+        if(organization.trim() === orgName) {
           loginErrorMessage.value = "";
           authenticated.value = true;
           processLogin.value = false;
@@ -50,10 +52,12 @@ const login = async (form: {login: string, password: string}) => {
         }
       }
       information.value = "У Вас нет полномочий для запуска помощника на выбранной организации";
+      processLogin.value = false;
       showInfo.value = true;
     }
   } else { loginErrorMessage.value = "Ошибочный логин или пароль";
     information.value = "Ошибочный логин или пароль";
+    processLogin.value = false;
     showInfo.value = true;
   }
 }
@@ -69,7 +73,9 @@ const getLoginMessage = () => { return loginErrorMessage.value; }
 
 const startProcessing = async () => {
   await sendMessage('processing', true)
+  processLogin.value = false;
   processing.value = true;
+  showInfo.value = false;
 }
 
 const stopProcessing = async () => {
@@ -128,7 +134,7 @@ onMessage('makePublication',async ({data}) => {
   return false;
 })
 
-onMessage('getUnansweredReviews',() => {
+onMessage('getUnreadReviews',() => {
   const content = getPreloadedData();
   if (!content || !content.initialState || !content.initialState.edit || !content.initialState.edit.reviews ||
       !content.initialState.edit.reviews.list || !Array.isArray(content.initialState.edit.reviews.list.items)) {
@@ -141,6 +147,24 @@ onMessage('getUnansweredReviews',() => {
     if('unread' === review.notify_status) {
       result.push({id: review.id, time: new Date(review.time_created),
                    author: review.author.user, rating: review.rating, text: review.full_text});
+    }
+  }
+  return result;
+});
+
+onMessage('getUnansweredReviews',() => {
+  const content = getPreloadedData();
+  if (!content || !content.initialState || !content.initialState.edit || !content.initialState.edit.reviews ||
+      !content.initialState.edit.reviews.list || !Array.isArray(content.initialState.edit.reviews.list.items)) {
+    console.error('Invalid data format');
+    return undefined;
+  }
+  const result = [];
+  for(let i = 0; i < content.initialState.edit.reviews.list.items.length; i++) {
+    const review = content.initialState.edit.reviews.list.items[i];
+    if(!review.owner_comment || !review.owner_comment.text) {
+      result.push({id: review.id, time: new Date(review.time_created),
+        author: review.author.user, rating: review.rating, text: review.full_text});
     }
   }
   return result;

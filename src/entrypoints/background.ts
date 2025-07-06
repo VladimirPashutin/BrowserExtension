@@ -65,9 +65,10 @@ const makePublications = async (publicationsData: Publication[], accessToken: st
     }
 }
 
-const processReviews = async (workingTabId: number, accessToken: string) => {
-    const unansweredReviews = await sendMessage('getUnansweredReviews',
-                                                            undefined, workingTabId);
+const processReviews = async (firstStart: boolean, workingTabId: number, accessToken: string) => {
+    let unansweredReviews;
+    if(firstStart) { unansweredReviews = await sendMessage('getUnansweredReviews', undefined, workingTabId); }
+    else { unansweredReviews = await sendMessage('getUnreadReviews', undefined, workingTabId); }
     const orgName = await sendMessage('getOrganization', undefined, workingTabId);
     if(unansweredReviews !== undefined && unansweredReviews.length > 0) {
         console.log("Собираем отзывы");
@@ -89,6 +90,7 @@ const processReviews = async (workingTabId: number, accessToken: string) => {
 }
 
 export default defineBackground(() => {
+    let firstStart = true;
     let processingEnabled = false;
     let accessToken: undefined | string = undefined;
     let refreshToken: undefined | string = undefined;
@@ -126,7 +128,9 @@ export default defineBackground(() => {
                 else { await makePublications(publicationsData, accessToken, workingTabId); }
             } else if(currentLocation === undefined || !currentLocation.endsWith("/reviews/"))
             { await sendMessage('switchLocation', "/reviews/", workingTabId); }
-            else { await processReviews(workingTabId, accessToken); }
+            else { await processReviews(firstStart, workingTabId, accessToken);
+                firstStart = false;
+            }
         }
     }
     onMessage('getStateInfo', async (message) => {

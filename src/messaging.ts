@@ -50,6 +50,7 @@ interface ProtocolMap {
     getStateInfo(): StateInfo;
     getOrganization(): string;
     doResponse(response: Response): void;
+    getUnreadReviews(): Review[] | undefined;
     getUnansweredReviews(): Review[] | undefined;
     makePublication(publication: Publication): boolean;
     markReadReviews(review: string): void;

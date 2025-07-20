@@ -1,6 +1,7 @@
 import {StateInfo, getUserInfo, sendMessage, onMessage, Publication} from "../messaging.ts";
 import {apiUrl,loginUrl,getRequestApiInterval} from "../utils.ts";
 import {defineBackground} from "wxt/sandbox";
+import {jwtDecode} from "jwt-decode"
 import {encode} from "js-base64";
 import {Md5} from 'ts-md5'
 
@@ -115,7 +116,24 @@ export default defineBackground(() => {
         currentLocation = message.sender.url;
     }
     const refreshTokens = async () => {
-
+        try { const aToken = jwtDecode(<string>accessToken);
+            const rToken = jwtDecode(<string>refreshToken);
+            if(<number>rToken.exp < Date.now() / 1000 + 120) {
+                const tokens = await fetch(loginUrl() + 'refresh', {"method": "POST",
+                     "headers": { "Content-Type": "application/json" }, "body": '{"refreshToken": "' +
+                      refreshToken + '", "accessToken": "' + accessToken + '"}'})
+                if(tokens.ok) {
+                    const tokensValue = await tokens.json()
+                    refreshToken = tokensValue.refreshToken;
+                    accessToken = tokensValue.accessToken;
+                    return true
+                }
+            } else if(<number>aToken.exp < Date.now() / 1000 + 60) {
+                const response = await fetch(loginUrl() + 'token',
+                           {"method": "POST", "body": " + accessToken + "});
+                accessToken = await response.text();
+            }
+        } catch (e) { console.error("Ошибка обновления токенов", e); }
     }
     const doProcessing = async () => {
         if(accessToken !== undefined && workingTabId !== undefined) {

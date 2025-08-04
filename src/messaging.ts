@@ -53,6 +53,7 @@ interface ProtocolMap {
     getUnreadReviews(): Review[] | undefined;
     getUnansweredReviews(): Review[] | undefined;
     makePublication(publication: Publication): boolean;
+    checkReviewsExists(orgName: string): void;
     markReadReviews(review: string): void;
     switchLocation(target: string): void;
     getUserInfo(): UserInfo | undefined;

@@ -1,5 +1,3 @@
-import {defineContentScript} from "wxt/sandbox";
-import {createIntegratedUi} from "wxt/client";
 import { createApp } from 'vue';
 import App from './App.vue';
 import '../../style.css';

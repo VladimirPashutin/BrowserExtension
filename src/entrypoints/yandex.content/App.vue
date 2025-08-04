@@ -44,6 +44,7 @@ const login = async (form: {login: string, password: string}) => {
       }
       for(const organization of userInfo.communities) {
         if(organization.trim() === orgName) {
+          await sendMessage('checkReviewsExists', orgName);
           loginErrorMessage.value = "";
           authenticated.value = true;
           processLogin.value = false;
@@ -85,16 +86,12 @@ const stopProcessing = async () => {
 
 const closeInfoPanel = () => { showInfo.value = false; }
 
-const makeTextInput = (textareaElement: { value: string;
+const makeTextInput = async (textareaElement: { textContent: string;
       dispatchEvent: (arg0: Event) => void; }, postText: string) => {
   if(textareaElement === null) { return; }
-  const keyupEvent = new KeyboardEvent('keyup', { bubbles: true });
-  const changeTextEvent = new Event('change', { bubbles: true });
-  const inputTextEvent = new Event('input', { bubbles: true });
-  textareaElement.value = postText;
-  textareaElement.dispatchEvent(inputTextEvent);
-  textareaElement.dispatchEvent(changeTextEvent);
-  textareaElement.dispatchEvent(keyupEvent);
+  textareaElement.textContent = postText;
+  textareaElement.dispatchEvent(new Event('input', { bubbles: true }));
+  await sleep(500 +  + Math.floor(Math.random() * 1000));
 }
 
 onMessage('getOrganization',() => {
@@ -122,10 +119,10 @@ onMessage('makePublication',async ({data}) => {
         //@ts-ignore
         fileInput.files = dataTransfer.files;
         fileInput.dispatchEvent(changeEvent);
-        await sleep(5000);
+        await sleep(4000 + Math.floor(Math.random() * 3000));
       }
       //@ts-ignore
-      makeTextInput(textInput, data.note);
+      await makeTextInput(textInput, data.note);
       //@ts-ignore
       document.querySelector('.PostAddForm-Actions button').click();
       return true;

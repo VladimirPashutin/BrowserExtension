@@ -1,6 +1,5 @@
 import {StateInfo, getUserInfo, sendMessage, onMessage, Publication} from "../messaging.ts";
 import {apiUrl,loginUrl,getRequestApiInterval} from "../utils.ts";
-import {defineBackground} from "wxt/sandbox";
 import {jwtDecode} from "jwt-decode"
 import {encode} from "js-base64";
 import {Md5} from 'ts-md5'
@@ -58,7 +57,7 @@ const makePublications = async (publicationsData: Publication[], accessToken: st
             //@ts-ignore
             if(image !== null && image.size > 0) { images.push(await blobToBase64(image)); }
         }
-        const message = { images: images, note: publication.note, id: publication.id};
+        const message = { images: images, note: publication.note, id: publication.id };
         const processed = await sendMessage('makePublication', message, workingTabId);
         if(processed) { await exchangeWithServer(accessToken, "POST",
           "publications/yandex-business/" + publication.id);
@@ -66,16 +65,19 @@ const makePublications = async (publicationsData: Publication[], accessToken: st
     }
 }
 
-const processReviews = async (firstStart: boolean, workingTabId: number, accessToken: string) => {
-    let unansweredReviews;
-    if(firstStart) { unansweredReviews = await sendMessage('getUnansweredReviews', undefined, workingTabId); }
-    else { unansweredReviews = await sendMessage('getUnreadReviews', undefined, workingTabId); }
+const processReviews = async (workingTabId: number, accessToken: string, isReviewsExists: boolean) => {
+    let unreadReviews;
+    if(isReviewsExists) {
+        unreadReviews = await sendMessage('getUnreadReviews', undefined, workingTabId);
+    } else {
+        unreadReviews = await sendMessage('getUnansweredReviews', undefined, workingTabId);
+    }
     const orgName = await sendMessage('getOrganization', undefined, workingTabId);
-    if(unansweredReviews !== undefined && unansweredReviews.length > 0) {
+    if(unreadReviews !== undefined && unreadReviews.length > 0) {
         console.log("Собираем отзывы");
         await exchangeWithServer(accessToken, "POST", 'generateReviews/' +
-              orgName + '/yandex-business', unansweredReviews);
-        for(const review of unansweredReviews) {
+              orgName + '/yandex-business', unreadReviews);
+        for(const review of unreadReviews) {
             await sendMessage('markReadReviews', review.text, workingTabId);
         }
     }
@@ -85,13 +87,14 @@ const processReviews = async (firstStart: boolean, workingTabId: number, accessT
         for(const message of generatedResponses) {
             console.log("Публикуем ответ");
             await sendMessage('doResponse', message, workingTabId);
-            await exchangeWithServer(accessToken, "POST", "/acceptResponse/yandex-business/" + message.id);
+            await exchangeWithServer(accessToken, "POST", "acceptResponse/yandex-business/" + message.id);
         }
     }
 }
 
+// @ts-ignore
 export default defineBackground(() => {
-    let firstStart = true;
+    let isReviewsExists = true;
     let processingEnabled = false;
     let accessToken: undefined | string = undefined;
     let refreshToken: undefined | string = undefined;
@@ -115,26 +118,6 @@ export default defineBackground(() => {
         { workingTabId = message.sender.tab.id; }
         currentLocation = message.sender.url;
     }
-    const refreshTokens = async () => {
-        try { const aToken = jwtDecode(<string>accessToken);
-            const rToken = jwtDecode(<string>refreshToken);
-            if(<number>rToken.exp < Date.now() / 1000 + 120) {
-                const tokens = await fetch(loginUrl() + 'refresh', {"method": "POST",
-                     "headers": { "Content-Type": "application/json" }, "body": '{"refreshToken": "' +
-                      refreshToken + '", "accessToken": "' + accessToken + '"}'})
-                if(tokens.ok) {
-                    const tokensValue = await tokens.json()
-                    refreshToken = tokensValue.refreshToken;
-                    accessToken = tokensValue.accessToken;
-                    return true
-                }
-            } else if(<number>aToken.exp < Date.now() / 1000 + 60) {
-                const response = await fetch(loginUrl() + 'token',
-                           {"method": "POST", "body": " + accessToken + "});
-                accessToken = await response.text();
-            }
-        } catch (e) { console.error("Ошибка обновления токенов", e); }
-    }
     const doProcessing = async () => {
         if(accessToken !== undefined && workingTabId !== undefined) {
             const orgName = await sendMessage('getOrganization', undefined, workingTabId);
@@ -146,9 +129,29 @@ export default defineBackground(() => {
                 else { await makePublications(publicationsData, accessToken, workingTabId); }
             } else if(currentLocation === undefined || !currentLocation.endsWith("/reviews/"))
             { await sendMessage('switchLocation', "/reviews/", workingTabId); }
-            else { await processReviews(firstStart, workingTabId, accessToken);
-                firstStart = false;
-            }
+            else { await processReviews(workingTabId, accessToken, isReviewsExists); }
+        }
+    }
+    const refreshTokens = async () => {
+        if(accessToken !== undefined && refreshToken !== undefined) {
+            try { const aToken = jwtDecode(accessToken);
+                const rToken = jwtDecode(refreshToken);
+                if(rToken.exp !== undefined && rToken.exp < Date.now() / 1000 + 120) {
+                    const tokens = await fetch(loginUrl() + 'refresh', {"method": "POST",
+                        "headers": { "Content-Type": "application/json" }, "body": '{"refreshToken": "' +
+                            refreshToken + '", "accessToken": "' + accessToken + '"}'})
+                    if(tokens.ok) {
+                        const tokensValue = await tokens.json()
+                        refreshToken = tokensValue.refreshToken;
+                        accessToken = tokensValue.accessToken;
+                        return true
+                    }
+                } else if(aToken.exp !== undefined && aToken.exp < Date.now() / 1000 + 60) {
+                    const response = await fetch(loginUrl() + 'token',
+                        {"method": "POST", "body": " + accessToken + "});
+                    accessToken = await response.text();
+                }
+            } catch (e) { console.error("Ошибка обновления токенов", e); }
         }
     }
     onMessage('getStateInfo', async (message) => {
@@ -178,6 +181,14 @@ export default defineBackground(() => {
         refreshToken = undefined;
         accessToken = undefined;
         return false;
+    })
+    onMessage('checkReviewsExists', async (message) => {
+        const headers = new Headers();
+        headers.append("Content-Type", "application/json");
+        if (accessToken != null) { headers.append("Authorization", accessToken); }
+        const checkReviews = await fetch(apiUrl() + 'isReviewsExists/' + message.data +
+                                                  '/yandex-business', { "headers": headers} );
+        if(checkReviews.ok) { isReviewsExists = (await checkReviews.text()).toLowerCase() === 'true'; }
     })
     onMessage('processing', async (message) => {
         await checkEnvironment(message);

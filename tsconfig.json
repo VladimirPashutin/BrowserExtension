@@ -1,7 +1,7 @@
 { "compilerOptions": {
-    "allowImportingTsExtensions": true,
-    "allowSyntheticDefaultImports": true
-  },
+  "allowImportingTsExtensions": true,
+  "allowSyntheticDefaultImports": true
+},
   "extends": "./.wxt/tsconfig.json",
   "include": ["src/**/*.ts", "src/**/*.vue"]
 }

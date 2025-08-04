@@ -10,10 +10,10 @@
         <groupId>ru.pashutin</groupId>
         <version>1.5.1</version>
     </parent>
-    <artifactId>yandex-business-chrome-extension</artifactId>
+    <artifactId>business-browser-extension</artifactId>
     <packaging>pom</packaging>
 
-    <name>YandexBusiness</name>
+    <name>BusinessBrowserExtension</name>
 
     <description>Extension for automatization yandex-business actions.</description>
 
@@ -32,49 +32,20 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
                 <executions>
-                    <execution>
-                        <id>copy-sources</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.basedir}/dist/</outputDirectory>
-                            <resources>
-                                <resource>
-                                    <directory>${project.basedir}/</directory>
-                                    <includes>
-                                        <include>*.png</include>
-                                        <include>*.js</include>
-                                    </includes>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>com.github.eirslett</groupId>
-                <artifactId>frontend-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>install node and npm</id>
-                        <goals>
-                            <goal>install-node-and-npm</goal>
-                        </goals>
-                        <phase>generate-resources</phase>
-                    </execution>
                     <execution>
                         <id>npm install</id>
                         <goals>
-                            <goal>npm</goal>
+                            <goal>exec</goal>
                         </goals>
-                        <phase>generate-resources</phase>
+                        <phase>initialize</phase>
                         <configuration>
-                            <arguments>install</arguments>
+                            <executable>npm</executable>
+                            <arguments>
+                                <argument>install</argument>
+                            </arguments>
                         </configuration>
                     </execution>
                 </executions>

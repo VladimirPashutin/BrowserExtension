@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import {onMounted,ref} from "vue"
-import {toUint8Array} from "js-base64";
 import {NButton,NButtonGroup} from "naive-ui";
 import Login from "../../components/Login.vue";
 import InfoPanel from "../../components/InfoPanel.vue";
@@ -172,7 +171,8 @@ onMessage('markReadReviews',({data}) => {
   if(reviewElement === undefined) { console.error("Ошибка позиционирования отзыва с текстом " + data); }
   else { const element = reviewElement?.getElementsByClassName('Review-Icon_type_read')?.
                          item(0) as HTMLElement;
-    element.click(); }
+    element?.click();
+  }
 });
 
 onMessage('doResponse', ({data}) => {

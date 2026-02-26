@@ -137,9 +137,9 @@ export default defineBackground(() => {
             try { const aToken = jwtDecode(accessToken);
                 const rToken = jwtDecode(refreshToken);
                 if(rToken.exp !== undefined && rToken.exp < Date.now() / 1000 + 120) {
+                    const requestBody = { "accessToken" : accessToken, "refreshToken": refreshToken }
                     const tokens = await fetch(loginUrl() + 'refresh', {"method": "POST",
-                        "headers": { "Content-Type": "application/json" }, "body": '{"refreshToken": "' +
-                            refreshToken + '", "accessToken": "' + accessToken + '"}'})
+                        "headers": { "Content-Type": "application/json" }, "body": JSON.stringify(requestBody) })
                     if(tokens.ok) {
                         const tokensValue = await tokens.json()
                         refreshToken = tokensValue.refreshToken;
@@ -148,10 +148,13 @@ export default defineBackground(() => {
                     }
                 } else if(aToken.exp !== undefined && aToken.exp < Date.now() / 1000 + 60) {
                     const response = await fetch(loginUrl() + 'token',
-                        {"method": "POST", "body": " + accessToken + "});
+                        {"method": "POST", "body": refreshToken });
                     accessToken = await response.text();
                 }
-            } catch (e) { console.error("Ошибка обновления токенов", e); }
+            } catch (e) { console.error("Ошибка обновления токенов", e);
+                refreshToken = undefined
+                accessToken = undefined
+            }
         }
     }
     onMessage('getStateInfo', async (message) => {
@@ -192,12 +195,21 @@ export default defineBackground(() => {
     })
     onMessage('processing', async (message) => {
         await checkEnvironment(message);
-        processingEnabled = message.data;
-        if(processingEnabled) {
+        if(message.data) {
+            if(refreshToken === undefined) {
+                processingEnabled = false
+                return;
+            } else { const rToken = jwtDecode(refreshToken);
+                if(rToken.exp !== undefined && rToken.exp < Date.now() / 1000 + 60) {
+                    processingEnabled = false
+                    refreshToken = undefined;
+                    accessToken = undefined;
+                    return;
+                }
+            }
             timer = setInterval(async () => {
                 await refreshTokens();
-                if(processingEnabled)
-                { await doProcessing(); }
+                await doProcessing();
             }, getRequestApiInterval());
         } else { clearInterval(timer); }
     })

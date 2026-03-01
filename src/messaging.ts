@@ -49,6 +49,7 @@ export interface Response {
 interface ProtocolMap {
     getStateInfo(): StateInfo;
     getOrganization(): string;
+    processing(flag: boolean): StateInfo;
     doResponse(response: Response): void;
     getUnreadReviews(): Review[] | undefined;
     getUnansweredReviews(): Review[] | undefined;
@@ -57,7 +58,6 @@ interface ProtocolMap {
     markReadReviews(review: string): void;
     switchLocation(target: string): void;
     getUserInfo(): UserInfo | undefined;
-    processing(flag: boolean): void;
     login(data: LoginData): boolean;
     logout(): void;
 }

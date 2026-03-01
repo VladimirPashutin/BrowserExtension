@@ -198,20 +198,24 @@ export default defineBackground(() => {
         if(message.data) {
             if(refreshToken === undefined) {
                 processingEnabled = false
-                return;
+                accessToken = undefined;
+                return { processing: processingEnabled, authenticated: false } as StateInfo;
             } else { const rToken = jwtDecode(refreshToken);
                 if(rToken.exp !== undefined && rToken.exp < Date.now() / 1000 + 60) {
                     processingEnabled = false
                     refreshToken = undefined;
                     accessToken = undefined;
-                    return;
+                    return { processing: processingEnabled, authenticated: false } as StateInfo;
                 }
             }
+            processingEnabled = true;
             timer = setInterval(async () => {
                 await refreshTokens();
-                await doProcessing();
+                if(accessToken !== undefined)
+                { await doProcessing(); }
             }, getRequestApiInterval());
-        } else { clearInterval(timer); }
+        } else { clearInterval(timer); processingEnabled = false; }
+        return { processing: processingEnabled, authenticated: accessToken !== undefined } as StateInfo;
     })
     onMessage('getUserInfo', async (message) => {
         await checkEnvironment(message);

@@ -28,43 +28,38 @@ const base64ToBlob = (source: string) => {
 
 const login = async (form: {login: string, password: string}) => {
   const loggedOn = await sendMessage('login', form)
+  loginErrorMessage.value = "";
+  processLogin.value = false;
   if(loggedOn) { const orgName = getOrganizationName();
     if(orgName === null || orgName.length === 0) {
       information.value = "Для работы помощника должна быть выбрана конкретная организация"
-      processLogin.value = false;
       showInfo.value = true;
     } else {
       const userInfo = await sendMessage('getUserInfo', undefined);
       if(userInfo === undefined || userInfo.communities === undefined) {
         information.value = "Для работы вам должна быть доступна организация";
-        processLogin.value = false;
         showInfo.value = true;
         return;
       }
       for(const organization of userInfo.communities) {
         if(organization.trim() === orgName) {
           await sendMessage('checkReviewsExists', orgName);
-          loginErrorMessage.value = "";
           authenticated.value = true;
-          processLogin.value = false;
           await startProcessing();
           return;
         }
       }
       information.value = "У Вас нет полномочий для запуска помощника на выбранной организации";
-      processLogin.value = false;
       showInfo.value = true;
     }
   } else { loginErrorMessage.value = "Ошибочный логин или пароль";
     information.value = "Ошибочный логин или пароль";
-    processLogin.value = false;
     showInfo.value = true;
   }
 }
 
 const logout = async () => {
   await sendMessage('logout', undefined)
-  authenticated.value = false;
   processLogin.value = false;
   await stopProcessing();
 }
@@ -72,15 +67,16 @@ const logout = async () => {
 const getLoginMessage = () => { return loginErrorMessage.value; }
 
 const startProcessing = async () => {
-  await sendMessage('processing', true)
-  processLogin.value = false;
-  processing.value = true;
+  const state: StateInfo = await sendMessage('processing', true)
+  authenticated.value = state.authenticated;
+  processing.value = state.processing;
   showInfo.value = false;
 }
 
 const stopProcessing = async () => {
-  await sendMessage('processing', false)
-  processing.value = false;
+  const state: StateInfo = await sendMessage('processing', false)
+  authenticated.value = state.authenticated;
+  processing.value = state.processing;
 }
 
 const closeInfoPanel = () => { showInfo.value = false; }
@@ -196,8 +192,9 @@ onMessage('doResponse', ({data}) => {
 
 onMounted(async () => {
   const state: StateInfo = await sendMessage('getStateInfo', undefined);
-  authenticated.value = state.authenticated
-  processing.value = state.processing
+  authenticated.value = state.authenticated;
+  processLogin.value = state.authenticated;
+  processing.value = state.processing;
 });
 </script>
 
